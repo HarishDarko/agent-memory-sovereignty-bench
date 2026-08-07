@@ -30,6 +30,7 @@ def _query(as_of="2026-07-01T00:00:00Z", principal="user_001", question="What is
     return Query("q1", question, principal, "personal", as_of)
 
 
+@unittest.skipUnless(MEMO_PATH.exists(), "set SOVBENCH_OPTMEM_MEMO or install the pinned OptMem copy per providers/optmem/README.md")
 class TestOptMemAdapter(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -76,6 +77,7 @@ class TestOptMemAdapter(unittest.TestCase):
         self.assertIn("ev-current", ids)
 
 
+@unittest.skipUnless(MEMO_PATH.exists(), "set SOVBENCH_OPTMEM_MEMO or install the pinned OptMem copy per providers/optmem/README.md")
 class TestOptMemContract(unittest.TestCase):
     def test_contract_passes_with_delete_unsupported(self):
         meta = ProviderMeta(

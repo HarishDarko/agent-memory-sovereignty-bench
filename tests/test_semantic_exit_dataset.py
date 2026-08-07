@@ -38,6 +38,8 @@ class SemanticExitDatasetTests(unittest.TestCase):
         self.assertEqual({event.target_event_id for event in events if event.operation == "delete"}, {"exit_event_011", "exit_event_012"})
 
     def test_private_gold_is_separate_and_contains_semantic_properties(self):
+        if not GOLD.exists():
+            self.skipTest("private semantic-exit gold is excluded from the OSS distribution")
         public_text = (DATASET / "events.jsonl").read_text(encoding="utf-8") + (DATASET / "queries.jsonl").read_text(encoding="utf-8")
         gold = json.loads(GOLD.read_text(encoding="utf-8"))
         self.assertTrue(set(gold["semantic_properties"]) >= {

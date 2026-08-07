@@ -38,7 +38,13 @@
       "upstream_commit": "n/a-local",
       "upstream_version": "0.1.0 (local baseline)"
     },
-    "name": "bm25-pure"
+    "name": "bm25-pure",
+    "factory": "providers.bm25:PureBm25Provider",
+    "manifest": "config/providers/bm25-pure-manifest.toml",
+    "tracks": {
+      "controlled": true,
+      "native": false
+    }
   },
   "bm25-sqlite-fts": {
     "containerized": false,
@@ -79,7 +85,13 @@
       "upstream_commit": "n/a-local",
       "upstream_version": "0.1.0 (local baseline)"
     },
-    "name": "bm25-sqlite-fts"
+    "name": "bm25-sqlite-fts",
+    "factory": "providers.bm25:SqliteFtsProvider",
+    "manifest": "config/providers/bm25-sqlite-fts-manifest.toml",
+    "tracks": {
+      "controlled": true,
+      "native": false
+    }
   },
   "full-context": {
     "containerized": false,
@@ -120,7 +132,13 @@
       "upstream_commit": "n/a-local",
       "upstream_version": "0.1.0 (local baseline)"
     },
-    "name": "full-context"
+    "name": "full-context",
+    "factory": "providers.full_context:FullContextProvider",
+    "manifest": "config/providers/full-context-manifest.toml",
+    "tracks": {
+      "controlled": true,
+      "native": false
+    }
   },
   "mem0": {
     "containerized": false,

@@ -1,0 +1,24 @@
+provider = "bm25-pure"
+version = "0.1.0 (local baseline)"
+upstream_commit = "n/a-local"
+
+[tracks]
+controlled = true
+native = false
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = false
+runner = true
+
+[capabilities.principal_isolation]
+product = false
+runner = true
+
+[capabilities.deletion]
+product = false
+
+[notes]
+controlled = "pure in-memory BM25 lexical baseline (k=10)"

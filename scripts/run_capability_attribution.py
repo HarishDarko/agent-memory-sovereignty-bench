@@ -41,6 +41,7 @@ RUN_ROOT = REPO_ROOT / "runs" / "followups" / "capability-attribution-v1"
 TEST_ROOT = REPO_ROOT / "scorer_private" / "test-v1"
 DEV_ROOT = REPO_ROOT / "datasets" / "dev" / "personal"
 PREREG_COMMIT = "4749319"
+RESEARCH_PROVIDERS = ("gbrain", "mem0", "hindsight")
 PRICE_INPUT = 0.14
 PRICE_OUTPUT = 0.28
 
@@ -629,7 +630,7 @@ def run_provider(provider_name: str, split: str, packs: list[str], reader_mode: 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--provider", required=True, choices=tuple(PROVIDER_COMMITS))
+    parser.add_argument("--provider", required=True, choices=RESEARCH_PROVIDERS)
     parser.add_argument("--split", required=True, choices=("dev", "test"))
     parser.add_argument("--pack", action="append", choices=("pack-1", "pack-2", "pack-3"))
     parser.add_argument("--reader", choices=("offline", "deepseek"))

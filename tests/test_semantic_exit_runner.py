@@ -10,6 +10,8 @@ from scripts import run_semantic_memory_exit as exit_run
 
 class SemanticExitRunnerTests(unittest.TestCase):
     def test_fidelity_is_explicit_per_property_and_does_not_use_composite_score(self):
+        if not exit_run.GOLD_PATH.exists():
+            self.skipTest("private semantic-exit gold is excluded from the OSS distribution")
         events = load_events(exit_run.DATASET / "events.jsonl")
         gold = json.loads(exit_run.GOLD_PATH.read_text(encoding="utf-8"))
         with tempfile.TemporaryDirectory() as tmp:

@@ -378,6 +378,7 @@ def build_freeze(
     images: dict | None = None,
     git: dict | None = None,
     pending_allowed: tuple[str, ...] = PENDING_FREEZE_PATHS,
+    require_packs: bool = True,
 ) -> dict:
     root = Path(repo_root) if repo_root else REPO_ROOT
     sys.path.insert(0, str(root))
@@ -405,8 +406,16 @@ def build_freeze(
     dev = dev_corpus_validation(root)
     if not dev["passed"]:
         raise RuntimeError("DEV corpus validation failed: " + "; ".join(dev["errors"]))
-    if not commitment["verified"]:
+    if not commitment["verified"] and require_packs:
         raise RuntimeError("hidden TEST commitment verification failed: " + "; ".join(commitment["errors"]))
+    if not require_packs:
+        commitment = {
+            **commitment,
+            "verified": False,
+            "errors": [],
+            "packs_present": False,
+            "note": "hidden TEST packs are excluded from this distribution; commitments are preserved in datasets/commitments/",
+        }
     cost = cost_estimate()
     image_record = {
         provider: {"reference": ref, "digest": resolved_images.get(provider, "not-built")}

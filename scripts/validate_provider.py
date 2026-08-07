@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import sys
 import tempfile
 import time
@@ -94,8 +95,15 @@ def main() -> int:
         results.append(("Capability manifest", "MISSING"))
 
     env_note = ""
-    with tempfile.TemporaryDirectory(prefix="amsb-provider-check-") as tmp:
-        data_dir = args.data_dir or Path(tmp)
+    # Persistent scratch under runs/ (gitignored): Chroma and other on-disk
+    # stores hold file locks on Windows, so temp-directory cleanup races the
+    # provider. Left in place for inspection; safe to delete when stopped.
+    scratch = args.data_dir or (REPO_ROOT / "runs" / "validate" / args.provider)
+    if scratch.exists():
+        shutil.rmtree(scratch, ignore_errors=True)
+    scratch.mkdir(parents=True, exist_ok=True)
+    try:
+        data_dir = scratch
         try:
             provider = create_provider(args.provider, data_dir)
             provider.reset()
@@ -148,6 +156,10 @@ def main() -> int:
                 results.append(("Deletion", f"PASS (no-op) ({type(exc).__name__})"))
 
             provider.cleanup()
+    finally:
+        # Best-effort release for Windows file locks; the directory itself is
+        # left behind under runs/ for inspection.
+        time.sleep(0.5)
 
     # 8. Native track declaration
     tracks = (entry.get("tracks") or {})

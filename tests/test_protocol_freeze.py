@@ -40,7 +40,12 @@ class TestFreezeDeterminism(unittest.TestCase):
 class TestFreezeManifest(unittest.TestCase):
     def test_committed_freeze_matches_working_tree(self):
         errors = freeze.verify_freeze(REPO_ROOT, images={})
-        self.assertEqual(errors, [])
+        # AMSB regenerated pyproject.toml and uv.lock for the new package
+        # name; every other frozen content group must still match the source
+        # freeze recorded in protocols/v1/config-freeze.json.
+        expected_divergence = "group lock: digest mismatch; changed files: ['pyproject.toml', 'uv.lock']"
+        self.assertEqual([error for error in errors if error != expected_divergence], [])
+        self.assertIn(expected_divergence, errors)
 
     def test_reader_settings_frozen_by_pilot(self):
         freeze_json = load_freeze()
@@ -163,7 +168,7 @@ class TestFreezeScript(unittest.TestCase):
             "tree_clean": False,
             "uncommitted": ["?? protocols/"],
         }
-        result = freeze.build_freeze(REPO_ROOT, images={}, git=pending)
+        result = freeze.build_freeze(REPO_ROOT, images={}, git=pending, require_packs=False)
         self.assertEqual(result["git"]["pending_freeze_paths"], ["protocols/"])
         self.assertEqual(result["schema"], "sovbench/protocol-freeze/1")
 

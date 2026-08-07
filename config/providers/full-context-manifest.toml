@@ -1,0 +1,16 @@
+provider = "full-context"
+version = "0.1.0 (local baseline)"
+upstream_commit = "n/a-local"
+
+[tracks]
+controlled = true
+native = false
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.deletion]
+product = false
+
+[notes]
+controlled = "no-retrieval cost control: everything is passed to the reader within budget"

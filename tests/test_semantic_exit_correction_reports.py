@@ -58,13 +58,15 @@ class SemanticExitCorrectionReportTests(unittest.TestCase):
 
     def test_original_report_is_unchanged_from_post_freeze_record(self):
         report = ROOT / "docs/reports/semantic-memory-exit-v1.md"
-        recorded = subprocess.run(
-            ["git", "show", "80288f5e402b9b8a20a46568e00ddd494433afd3:docs/reports/semantic-memory-exit-v1.md"],
-            cwd=ROOT,
-            check=True,
-            capture_output=True,
-        ).stdout.decode("utf-8")
-        self.assertEqual(report.read_text(encoding="utf-8"), recorded)
+        # AMSB has a fresh Git history, so the source-repo commit reference is
+        # replaced by a SHA-256 recorded at extraction time; the file is
+        # byte-identical to the source report (see docs/research-history/).
+        recorded = (
+            ROOT / "docs" / "research-history" / "original-report-sha256.txt"
+        ).read_text(encoding="utf-8").strip()
+        from benchmark.hashing import sha256_file
+
+        self.assertEqual(sha256_file(report), recorded)
 
 
 if __name__ == "__main__":

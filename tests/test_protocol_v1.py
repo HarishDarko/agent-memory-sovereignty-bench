@@ -11,6 +11,8 @@ from benchmark.config import Settings
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PROTOCOL_DIR = REPO_ROOT / "protocols" / "v1"
+OPTMEM_MEMO = REPO_ROOT / ".optmem" / "memo"
+HIDDEN_PACKS = REPO_ROOT / "scorer_private" / "test-v1"
 
 
 def _trace_row(
@@ -527,6 +529,7 @@ class TestFakeUpstreamPaidPath(unittest.TestCase):
 
 
 class TestFactoryFailureResilience(unittest.TestCase):
+    @unittest.skipUnless(HIDDEN_PACKS.exists(), "hidden TEST packs not present in this checkout")
     def test_factory_crash_records_failure_and_keeps_batch_alive(self):
         import tempfile
 
@@ -605,6 +608,7 @@ class TestGBrainPartialHome(unittest.TestCase):
 
 
 class TestNativeTrack(unittest.TestCase):
+    @unittest.skipUnless(OPTMEM_MEMO.exists(), "pinned OptMem copy not installed in this checkout")
     def test_native_factories_wire_provider_modes(self):
         import scripts.run_protocol_v1 as protocol
         from benchmark.config import Settings
@@ -656,6 +660,8 @@ class TestNativeTrack(unittest.TestCase):
             self.assertIn("embedding provider", summary["reason"])
 
     def test_native_preflight_relaxes_canary_for_llm_extraction_providers(self):
+        if not HIDDEN_PACKS.exists():
+            self.skipTest("hidden TEST packs not present in this checkout")
         import scripts.run_protocol_v1 as protocol
         from contamination.models import PreflightResult
 
