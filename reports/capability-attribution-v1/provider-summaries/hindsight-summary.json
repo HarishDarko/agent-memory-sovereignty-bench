@@ -1,0 +1,35 @@
+{
+  "experiment_cost_usd": 0.426423,
+  "ledger": {
+    "cost_usd": 0.070039,
+    "input_tokens": 328656,
+    "output_tokens": 85810,
+    "requests": 162,
+    "returned_models": [
+      "deepseek-v4-flash"
+    ]
+  },
+  "ledger_sha256": "076950fedb17fa5dff42844156f353627323b5c7fe78b4b67f0f6189af030533",
+  "manifests": [
+    {
+      "pack": "pack-1",
+      "status": "completed"
+    },
+    {
+      "pack": "pack-2",
+      "status": "completed"
+    },
+    {
+      "pack": "pack-3",
+      "status": "completed"
+    }
+  ],
+  "packs": [
+    "pack-1",
+    "pack-2",
+    "pack-3"
+  ],
+  "provider": "hindsight",
+  "schema": "sovbench/capability-attribution-provider-summary/1",
+  "split": "test"
+}

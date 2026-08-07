@@ -38,8 +38,10 @@ DATASET = ROOT / "datasets" / "followups" / "semantic-exit-v1"
 GOLD_PATH = ROOT / "scorer_private" / "semantic-exit-v1" / "gold.json"
 RUN_ROOT = ROOT / "runs" / "followups" / "semantic-exit-v1"
 COMPOSE_FILE = ROOT / "docker" / "providers" / "hindsight" / "docker-compose.yml"
-GBRAIN_BIN = os.environ.get("GBRAIN_BIN", r"C:\Users\haris\.bun\install\global\node_modules\gbrain\src\cli.ts")
-BUN_BIN = os.environ.get("BUN_BIN", r"C:\Users\haris\.bun\bin\bun.exe")
+GBRAIN_BIN = os.environ.get("GBRAIN_BIN") or str(
+    Path.home() / ".bun" / "install" / "global" / "node_modules" / "gbrain" / "src" / "cli.ts"
+)
+BUN_BIN = os.environ.get("BUN_BIN") or str(Path.home() / ".bun" / "bin" / "bun.exe")
 OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:4713/v1")
 OLLAMA_MODEL = os.environ.get("SOVBENCH_OLLAMA_EMBEDDING_MODEL", "snowflake-arctic-embed:335m")
 OLLAMA_DIMENSIONS = int(os.environ.get("SOVBENCH_OLLAMA_EMBEDDING_DIMENSIONS", "1024"))

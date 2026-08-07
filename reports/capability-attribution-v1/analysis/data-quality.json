@@ -1,0 +1,127 @@
+{
+  "attempt_rows": 918,
+  "deletion_rows": 18,
+  "manifests": [
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+        "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+        "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+      },
+      "pack": "pack-1",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "gbrain",
+      "reader_errors": 2
+    },
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+        "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+        "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+      },
+      "pack": "pack-2",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "gbrain",
+      "reader_errors": 1
+    },
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+        "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+        "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+      },
+      "pack": "pack-3",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "gbrain",
+      "reader_errors": 2
+    },
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+        "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+        "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+      },
+      "pack": "pack-1",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "mem0",
+      "reader_errors": 1
+    },
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+        "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+        "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+      },
+      "pack": "pack-2",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "mem0",
+      "reader_errors": 0
+    },
+    {
+      "attempt_rows": 126,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+        "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+        "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+      },
+      "pack": "pack-3",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "mem0",
+      "reader_errors": 2
+    },
+    {
+      "attempt_rows": 54,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+        "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+        "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+      },
+      "pack": "pack-1",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "hindsight",
+      "reader_errors": 0
+    },
+    {
+      "attempt_rows": 54,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+        "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+        "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+      },
+      "pack": "pack-2",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "hindsight",
+      "reader_errors": 0
+    },
+    {
+      "attempt_rows": 54,
+      "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+      "dataset_hashes": {
+        "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+        "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+        "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+      },
+      "pack": "pack-3",
+      "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+      "provider": "hindsight",
+      "reader_errors": 0
+    }
+  ],
+  "passed": true,
+  "reader_errors": 8,
+  "retrieval_rows": 144,
+  "schema": "sovbench/capability-attribution-data-quality/1"
+}

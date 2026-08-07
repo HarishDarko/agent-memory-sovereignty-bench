@@ -1,0 +1,41 @@
+# GBrain capability manifest (AMSB, researched configuration)
+# Source: capability-attribution-v1 and corrected Semantic Exit findings.
+provider = "gbrain"
+version = "0.42.73.2"
+upstream_commit = "15b9863d13635d173562a54f55a1d388bfcf546b"
+
+[tracks]
+controlled = true
+native = "partial"   # controlled keyword configuration; native track partial
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = false
+runner = true
+
+[capabilities.principal_isolation]
+product = false
+runner = true
+
+[capabilities.scope]
+product = false
+runner = true
+
+[capabilities.deletion]
+product = true
+
+[capabilities.provenance]
+product = "partial"
+adapter = true
+
+[capabilities.export]
+product = true
+
+[capabilities.same_system_recovery]
+product = true
+
+[notes]
+controlled = "PGLite, --no-embedding, keyword search, adapter-written Markdown/frontmatter"
+native = "product-native extraction not enabled in the researched configuration"

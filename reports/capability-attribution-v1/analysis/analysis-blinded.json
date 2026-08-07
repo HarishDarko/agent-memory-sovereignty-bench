@@ -1,0 +1,1450 @@
+{
+  "data_quality": {
+    "attempt_rows": 918,
+    "deletion_rows": 18,
+    "manifests": [
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+          "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+          "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+        },
+        "pack": "pack-1",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "gbrain",
+        "reader_errors": 2
+      },
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+          "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+          "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+        },
+        "pack": "pack-2",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "gbrain",
+        "reader_errors": 1
+      },
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+          "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+          "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+        },
+        "pack": "pack-3",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "gbrain",
+        "reader_errors": 2
+      },
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+          "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+          "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+        },
+        "pack": "pack-1",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "mem0",
+        "reader_errors": 1
+      },
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+          "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+          "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+        },
+        "pack": "pack-2",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "mem0",
+        "reader_errors": 0
+      },
+      {
+        "attempt_rows": 126,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+          "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+          "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+        },
+        "pack": "pack-3",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "mem0",
+        "reader_errors": 2
+      },
+      {
+        "attempt_rows": 54,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+          "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+          "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+        },
+        "pack": "pack-1",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "hindsight",
+        "reader_errors": 0
+      },
+      {
+        "attempt_rows": 54,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+          "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+          "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+        },
+        "pack": "pack-2",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "hindsight",
+        "reader_errors": 0
+      },
+      {
+        "attempt_rows": 54,
+        "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+        "dataset_hashes": {
+          "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+          "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+          "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+        },
+        "pack": "pack-3",
+        "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+        "provider": "hindsight",
+        "reader_errors": 0
+      }
+    ],
+    "passed": true,
+    "reader_errors": 8,
+    "retrieval_rows": 144,
+    "schema": "sovbench/capability-attribution-data-quality/1"
+  },
+  "observations": {
+    "deletion": {
+      "gbrain": {
+        "assisted_deleted_evidence_count": 0,
+        "queries": 6,
+        "raw_deleted_evidence_count": 0
+      },
+      "hindsight": {
+        "assisted_deleted_evidence_count": 0,
+        "queries": 6,
+        "raw_deleted_evidence_count": 0
+      },
+      "mem0": {
+        "assisted_deleted_evidence_count": 0,
+        "queries": 6,
+        "raw_deleted_evidence_count": 0
+      }
+    },
+    "retrieval": {
+      "authority": {
+        "assisted_evidence_items": 638,
+        "mutation_failures": 0,
+        "queries": 18,
+        "raw_evidence_items": 714,
+        "retrieval_changed_by_assistance": 18
+      },
+      "provenance": {
+        "assisted_evidence_items": 321,
+        "mutation_failures": 0,
+        "queries": 9,
+        "raw_evidence_items": 357,
+        "retrieval_changed_by_assistance": 9
+      },
+      "scope": {
+        "assisted_evidence_items": 9,
+        "mutation_failures": 0,
+        "queries": 27,
+        "raw_evidence_items": 978,
+        "retrieval_changed_by_assistance": 21
+      },
+      "temporal": {
+        "assisted_evidence_items": 960,
+        "mutation_failures": 0,
+        "queries": 72,
+        "raw_evidence_items": 1353,
+        "retrieval_changed_by_assistance": 72
+      }
+    }
+  },
+  "properties": {
+    "authority": {
+      "gbrain": {
+        "answer_change_rate": 0.333333,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.333333,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 0.666667,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 5
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": -0.333333,
+        "metadata_governance_prompt": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "metadata_neutral": {
+          "absolute_delta": 0.333333,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.555556,
+            "ci_low": 0.111111,
+            "observed_mean_diff": 0.333333,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "primary": {
+          "absolute_delta": 0.333333,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.555556,
+            "ci_low": 0.111111,
+            "observed_mean_diff": 0.333333,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 1.0,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.333333,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.555556,
+            "ci_low": 0.111111,
+            "observed_mean_diff": 0.333333,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        }
+      },
+      "hindsight": {
+        "answer_change_rate": 0.111111,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.111111,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 0.888889,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 2
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": -0.111111,
+        "metadata_governance_prompt": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "metadata_neutral": {
+          "absolute_delta": 0.111111,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.222222,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.111111,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "primary": {
+          "absolute_delta": 0.111111,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.222222,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.111111,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 1.0,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.111111,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.222222,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.111111,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 2,
+            "discordant": 2,
+            "p_value": 0.5
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        }
+      },
+      "mem0": {
+        "answer_change_rate": 0.166667,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.166667,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 0.833333,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 1
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 18,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 6,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": -0.166667,
+        "metadata_governance_prompt": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "metadata_neutral": {
+          "absolute_delta": 0.166667,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.388889,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.166667,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "primary": {
+          "absolute_delta": 0.166667,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.388889,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.166667,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 1.0,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.166667,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.388889,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.166667,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 18,
+          "queries": 6
+        }
+      }
+    },
+    "provenance": {
+      "gbrain": {
+        "answer_change_rate": 1.0,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.888889,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": -0.111111,
+        "metadata_governance_prompt": {
+          "absolute_delta": 0.888889,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 0.666667,
+            "observed_mean_diff": 0.888889,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "metadata_neutral": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "primary": {
+          "absolute_delta": 0.888889,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 0.666667,
+            "observed_mean_diff": 0.888889,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 0.75,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": -0.111111,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": -0.333333,
+            "observed_mean_diff": -0.111111,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        }
+      },
+      "hindsight": {
+        "answer_change_rate": 1.0,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.222222,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": 0.0,
+        "metadata_governance_prompt": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "metadata_neutral": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "primary": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 0.75,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        }
+      },
+      "mem0": {
+        "answer_change_rate": 1.0,
+        "conditions": {
+          "M0P0": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M0P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 0.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P0": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "M1P1": {
+            "abstention": 0.0,
+            "attempts": 9,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 3,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "interaction_delta": 0.0,
+        "metadata_governance_prompt": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-C",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "metadata_neutral": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "primary": {
+          "absolute_delta": 1.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 1.0,
+            "ci_low": 1.0,
+            "observed_mean_diff": 1.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-D",
+          "holm_p_value": 0.75,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 3,
+            "discordant": 3,
+            "p_value": 0.25
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_text_only": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-C",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        },
+        "prompt_with_metadata": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 3,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-B",
+          "condition_b": "CELL-D",
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 9,
+          "queries": 3
+        }
+      }
+    },
+    "scope": {
+      "gbrain": {
+        "answer_change_rate": 0.740741,
+        "conditions": {
+          "D0-native": {
+            "abstention": 0.0,
+            "attempts": 27,
+            "cross_principal_evidence_count": 306,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 48,
+            "queries": 9,
+            "reader_correct": 0.333333,
+            "reader_errors": 0,
+            "unauthorized_answer": 18,
+            "wrong_authority_selection": 0
+          },
+          "D1-assisted": {
+            "abstention": 0.666667,
+            "attempts": 27,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 9,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "primary": {
+          "absolute_delta": 0.666667,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.857143,
+            "ci_low": 0.545455,
+            "observed_mean_diff": 0.666667,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "holm_p_value": 0.09375,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 6,
+            "discordant": 6,
+            "p_value": 0.03125
+          },
+          "metric": "reader_correct",
+          "pairs": 27,
+          "queries": 9
+        }
+      },
+      "hindsight": {
+        "answer_change_rate": 0.703704,
+        "conditions": {
+          "D0-native": {
+            "abstention": 0.0,
+            "attempts": 27,
+            "cross_principal_evidence_count": 483,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 87,
+            "queries": 9,
+            "reader_correct": 0.333333,
+            "reader_errors": 0,
+            "unauthorized_answer": 18,
+            "wrong_authority_selection": 0
+          },
+          "D1-assisted": {
+            "abstention": 0.666667,
+            "attempts": 27,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 9,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "primary": {
+          "absolute_delta": 0.666667,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.857143,
+            "ci_low": 0.545455,
+            "observed_mean_diff": 0.666667,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "holm_p_value": 0.09375,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 6,
+            "discordant": 6,
+            "p_value": 0.03125
+          },
+          "metric": "reader_correct",
+          "pairs": 27,
+          "queries": 9
+        }
+      },
+      "mem0": {
+        "answer_change_rate": 0.0,
+        "conditions": {
+          "D0-native": {
+            "abstention": 0.666667,
+            "attempts": 27,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 36,
+            "queries": 9,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "D1-assisted": {
+            "abstention": 0.666667,
+            "attempts": 27,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 9,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "primary": {
+          "absolute_delta": 0.0,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "observed_mean_diff": 0.0,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "holm_p_value": 1.0,
+          "material": false,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 0,
+            "discordant": 0,
+            "p_value": 1.0
+          },
+          "metric": "reader_correct",
+          "pairs": 27,
+          "queries": 9
+        }
+      }
+    },
+    "temporal": {
+      "gbrain": {
+        "answer_change_rate": 0.462963,
+        "conditions": {
+          "C0-native": {
+            "abstention": 0.0,
+            "attempts": 108,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 45,
+            "future_evidence_count": 558,
+            "queries": 36,
+            "reader_correct": 0.537037,
+            "reader_errors": 5,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "C1-assisted": {
+            "abstention": 0.0,
+            "attempts": 108,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 36,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "primary": {
+          "absolute_delta": 0.462963,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.490741,
+            "ci_low": 0.425926,
+            "observed_mean_diff": 0.462963,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "holm_p_value": 3.1e-05,
+          "material": true,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 16,
+            "discordant": 16,
+            "p_value": 3.1e-05
+          },
+          "metric": "reader_correct",
+          "pairs": 108,
+          "queries": 36
+        }
+      },
+      "mem0": {
+        "answer_change_rate": 0.472222,
+        "conditions": {
+          "C0-native": {
+            "abstention": 0.0,
+            "attempts": 108,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 49,
+            "future_evidence_count": 618,
+            "queries": 36,
+            "reader_correct": 0.527778,
+            "reader_errors": 3,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          },
+          "C1-assisted": {
+            "abstention": 0.0,
+            "attempts": 108,
+            "cross_principal_evidence_count": 0,
+            "future_answer_leakage": 0,
+            "future_evidence_count": 0,
+            "queries": 36,
+            "reader_correct": 1.0,
+            "reader_errors": 0,
+            "unauthorized_answer": 0,
+            "wrong_authority_selection": 0
+          }
+        },
+        "primary": {
+          "absolute_delta": 0.472222,
+          "bootstrap": {
+            "blocks": 6,
+            "ci_high": 0.5,
+            "ci_low": 0.435185,
+            "observed_mean_diff": 0.472222,
+            "resamples": 10000,
+            "seed": 20260805
+          },
+          "condition_a": "CELL-A",
+          "condition_b": "CELL-B",
+          "holm_p_value": 3e-05,
+          "material": true,
+          "mcnemar": {
+            "a_wins": 0,
+            "b_wins": 17,
+            "discordant": 17,
+            "p_value": 1.5e-05
+          },
+          "metric": "reader_correct",
+          "pairs": 108,
+          "queries": 36
+        }
+      }
+    }
+  },
+  "schema": "sovbench/capability-attribution-analysis/1"
+}

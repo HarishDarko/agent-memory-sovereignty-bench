@@ -1,0 +1,41 @@
+# Hindsight capability manifest (AMSB, researched configuration)
+# Source: capability-attribution-v1 and corrected Semantic Exit findings.
+provider = "hindsight"
+version = "0.8.6"
+upstream_commit = "797faf7981ce9332e2ce7c922471b72b506b4065"
+
+[tracks]
+controlled = true
+native = true
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = "partial"   # recall requires application-supplied query_timestamp
+runner = true
+
+[capabilities.principal_isolation]
+product = false
+runner = true
+
+[capabilities.scope]
+product = false
+runner = true
+
+[capabilities.deletion]
+product = true
+
+[capabilities.provenance]
+product = "partial"
+adapter = true
+
+[capabilities.export]
+product = true   # whole-bank export/import
+
+[capabilities.same_system_recovery]
+product = true
+
+[notes]
+controlled = "LLM features off, local embeddings/reranker, one isolated bank per run"
+native = "product-native extraction available and exercised in research"

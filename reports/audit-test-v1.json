@@ -1,0 +1,122 @@
+{
+  "dev": {
+    "events": 105,
+    "ground_truth_rows": 80,
+    "queries": 80
+  },
+  "errors": [],
+  "packs": {
+    "pack-1": {
+      "events": 88,
+      "kinds": {
+        "abstention": 5,
+        "authority_conflict": 1,
+        "changed_preference": 8,
+        "cross_user": 1,
+        "current_state": 8,
+        "deletion": 1,
+        "do_not_store": 1,
+        "expiry": 8,
+        "historical": 8,
+        "migration": 1,
+        "multi_hop": 1,
+        "poisoning": 1,
+        "provenance": 1,
+        "recovery": 1,
+        "role_group": 2,
+        "supersession": 8,
+        "temporary_validity": 8
+      },
+      "queries": 64,
+      "subjects": {
+        "person_01": 8,
+        "person_02": 8,
+        "person_03": 8,
+        "person_04": 8,
+        "person_05": 9,
+        "person_06": 8,
+        "person_07": 6,
+        "person_08": 7,
+        "platform-team": 2
+      }
+    },
+    "pack-2": {
+      "events": 88,
+      "kinds": {
+        "abstention": 5,
+        "authority_conflict": 1,
+        "changed_preference": 8,
+        "cross_user": 1,
+        "current_state": 8,
+        "deletion": 1,
+        "do_not_store": 1,
+        "expiry": 8,
+        "historical": 8,
+        "migration": 1,
+        "multi_hop": 1,
+        "poisoning": 1,
+        "provenance": 1,
+        "recovery": 1,
+        "role_group": 2,
+        "supersession": 8,
+        "temporary_validity": 8
+      },
+      "queries": 64,
+      "subjects": {
+        "person_01": 8,
+        "person_02": 8,
+        "person_03": 8,
+        "person_04": 8,
+        "person_05": 9,
+        "person_06": 8,
+        "person_07": 6,
+        "person_08": 7,
+        "platform-team": 2
+      }
+    },
+    "pack-3": {
+      "events": 88,
+      "kinds": {
+        "abstention": 5,
+        "authority_conflict": 1,
+        "changed_preference": 8,
+        "cross_user": 1,
+        "current_state": 8,
+        "deletion": 1,
+        "do_not_store": 1,
+        "expiry": 8,
+        "historical": 8,
+        "migration": 1,
+        "multi_hop": 1,
+        "poisoning": 1,
+        "provenance": 1,
+        "recovery": 1,
+        "role_group": 2,
+        "supersession": 8,
+        "temporary_validity": 8
+      },
+      "queries": 64,
+      "subjects": {
+        "person_01": 8,
+        "person_02": 8,
+        "person_03": 8,
+        "person_04": 8,
+        "person_05": 9,
+        "person_06": 8,
+        "person_07": 6,
+        "person_08": 7,
+        "platform-team": 2
+      }
+    }
+  },
+  "passed": true,
+  "schema": "sovbench/audit/1",
+  "warnings": [
+    "pack-1: identical question templates across splits: 6",
+    "pack-1: shared 4-gram question fragments across splits: 110",
+    "pack-2: identical question templates across splits: 15",
+    "pack-2: shared 4-gram question fragments across splits: 125",
+    "pack-3: identical question templates across splits: 8",
+    "pack-3: shared 4-gram question fragments across splits: 126"
+  ]
+}

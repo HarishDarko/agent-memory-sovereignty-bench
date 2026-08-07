@@ -527,7 +527,7 @@ def main() -> int:
         "versions": _native_versions(),
         "reader": {"model": settings.model, "gateway": "ledgered DeepSeek gateway for native Mem0/Hindsight only", "no reader judge": True},
         "gbrain_embedding": {"provider": "Ollama", "model": OLLAMA_MODEL, "dimensions": OLLAMA_DIMENSIONS, "base_url": OLLAMA_BASE_URL, "recovery_only": True},
-        "source_evidence": {"hindsight_admin": "pinned image sovbench-hindsight:797faf7-cached / hindsight-api 0.8.6", "gbrain_source": "C:\\Users\\haris\\.bun\\install\\global\\node_modules\\gbrain\\src", "mem0_source": ".venv/Lib/site-packages/mem0"},
+        "source_evidence": {"hindsight_admin": "pinned image sovbench-hindsight:797faf7-cached / hindsight-api 0.8.6", "gbrain_source": "pinned gbrain CLI 0.42.73.2 installed via bun", "mem0_source": "pinned mem0ai 2.0.17 site-packages"},
         "started_at": _now(),
     }
     _json(attempt / "experiment-manifest.json", manifest)

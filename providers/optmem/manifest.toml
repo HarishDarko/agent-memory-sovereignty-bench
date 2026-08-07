@@ -1,0 +1,42 @@
+# OptMem capability manifest (AMSB, researched configuration)
+# Source: corrected Semantic Exit findings; pinned upstream has no license file.
+provider = "optmem"
+version = "1fb164c"
+upstream_commit = "1fb164cf39028047781f72ac3bb1e5a691c1dcb0"
+
+[tracks]
+controlled = true
+native = false
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = false
+runner = true
+
+[capabilities.principal_isolation]
+product = false
+runner = true
+
+[capabilities.scope]
+product = false
+runner = true
+
+[capabilities.deletion]
+product = false   # append-only by design; forget drops rebuildable summaries
+adapter = false
+
+[capabilities.provenance]
+product = "partial"
+adapter = true   # event-id provenance in each memory line
+
+[capabilities.export]
+product = "partial"
+
+[capabilities.same_system_recovery]
+product = "partial"
+
+[notes]
+controlled = "adapter performs as-of/principal/scope filtering; recorded separately from product capabilities"
+native = "product-native track not implemented"

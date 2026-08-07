@@ -121,5 +121,119 @@
       "upstream_version": "0.1.0 (local baseline)"
     },
     "name": "full-context"
+  },
+  "mem0": {
+    "containerized": false,
+    "static": true,
+    "meta": {
+      "config_hash": "0a4536a2fe6b282a26631336e645e8b148dbf01b5f7403c4010777a3b439f78b",
+      "license": "Apache-2.0",
+      "adapter_version": "0.1.0",
+      "external_dependencies": [
+        "mem0ai (pinned commit)",
+        "chromadb",
+        "fastembed"
+      ],
+      "telemetry": "disabled",
+      "image_digest": "n/a-local",
+      "upstream_commit": "3f39fba28f7781aaf581f64a4af39d017af65835",
+      "upstream_version": "2.0.17",
+      "name": "mem0",
+      "network_needs": []
+    },
+    "contract_status": "research-v1 (controlled config; see docs/reports)",
+    "factory_kwargs_env": {},
+    "manifest": "providers/mem0/manifest.toml",
+    "name": "mem0",
+    "factory": "providers.mem0.adapter:make_mem0",
+    "tracks": {
+      "controlled": true,
+      "native": true
+    }
+  },
+  "optmem": {
+    "containerized": false,
+    "static": true,
+    "meta": {
+      "config_hash": "88d25b313c1803e2fe66c3bc82cb8a034a350614068d6057e75a7a4777ccd259",
+      "license": "no-license-file (all rights reserved by default)",
+      "adapter_version": "0.1.0",
+      "external_dependencies": [],
+      "telemetry": "none",
+      "image_digest": "sha256:bc64d013d37586253156302df506009c099a38592f26aefa5b9e383feb825833",
+      "upstream_commit": "1fb164cf39028047781f72ac3bb1e5a691c1dcb0",
+      "upstream_version": "1fb164c",
+      "name": "optmem",
+      "network_needs": []
+    },
+    "contract_status": "research-v1 (controlled config; see docs/reports)",
+    "factory_kwargs_env": {},
+    "manifest": "providers/optmem/manifest.toml",
+    "name": "optmem",
+    "factory": "providers.optmem.adapter:make_optmem",
+    "tracks": {
+      "controlled": true,
+      "native": false
+    }
+  },
+  "hindsight": {
+    "containerized": true,
+    "static": true,
+    "meta": {
+      "config_hash": "63bf9c9582193d93b610edd9121240a7cb364d6a0e1a36ec6a9cd6f813b9a44f",
+      "license": "MIT",
+      "adapter_version": "0.1.0",
+      "external_dependencies": [
+        "hindsight-api server (pinned commit)",
+        "PostgreSQL + pgvector"
+      ],
+      "telemetry": "none",
+      "image_digest": "n/a-local",
+      "upstream_commit": "797faf7981ce9332e2ce7c922471b72b506b4065",
+      "upstream_version": "0.8.6",
+      "name": "hindsight",
+      "network_needs": []
+    },
+    "contract_status": "research-v1 (controlled config; see docs/reports)",
+    "factory_kwargs_env": {
+      "api_url": "HINDSIGHT_API_URL"
+    },
+    "manifest": "providers/hindsight/manifest.toml",
+    "name": "hindsight",
+    "factory": "providers.hindsight.adapter:make_hindsight",
+    "tracks": {
+      "controlled": true,
+      "native": true
+    }
+  },
+  "gbrain": {
+    "containerized": false,
+    "static": true,
+    "meta": {
+      "config_hash": "500f860108a1b11dd20ad0eb1fdcd1224b3227ee54f645575bdbbbc237f0eedb",
+      "license": "MIT",
+      "adapter_version": "0.1.0",
+      "external_dependencies": [
+        "bun",
+        "gbrain CLI (pinned commit)"
+      ],
+      "telemetry": "none",
+      "image_digest": "n/a-local",
+      "upstream_commit": "15b9863d13635d173562a54f55a1d388bfcf546b",
+      "upstream_version": "0.42.73.2",
+      "name": "gbrain",
+      "network_needs": []
+    },
+    "contract_status": "research-v1 (controlled config; see docs/reports)",
+    "factory_kwargs_env": {
+      "gbrain_bin": "GBRAIN_BIN"
+    },
+    "manifest": "providers/gbrain/manifest.toml",
+    "name": "gbrain",
+    "factory": "providers.gbrain.adapter:make_gbrain",
+    "tracks": {
+      "controlled": true,
+      "native": "partial"
+    }
   }
 }

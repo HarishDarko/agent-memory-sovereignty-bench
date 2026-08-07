@@ -112,8 +112,8 @@ directory, especially `dev-analysis.json` and
 `environment-attestation.json`. The reproducible command was:
 
 ```powershell
-$env:GBRAIN_BIN = "C:\Users\haris\.bun\install\global\node_modules\gbrain\src\cli.ts"
-$env:BUN_BIN = "C:\Users\haris\.bun\bin\bun.exe"
+$env:GBRAIN_BIN = "%USERPROFILE%\.bun\install\global\node_modules\gbrain\src\cli.ts"
+$env:BUN_BIN = "%USERPROFILE%\.bun\bin\bun.exe"
 $env:OLLAMA_BASE_URL = "http://127.0.0.1:4713/v1"
 $env:OLLAMA_HOST = "127.0.0.1:4713"
 $env:SOVBENCH_PROTOCOL_COST_APPROVED = "1"

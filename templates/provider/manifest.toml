@@ -1,0 +1,43 @@
+# Provider capability manifest (template)
+# Attribute every capability to its implementing layer. Never claim a
+# benchmark-enforced property as a product capability.
+provider = "example"
+version = "0.1.0"
+upstream_commit = "0000000000000000000000000000000000000000"
+
+[tracks]
+controlled = true
+native = false
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = false
+runner = true
+
+[capabilities.principal_isolation]
+product = false
+runner = true
+
+[capabilities.scope]
+product = false
+runner = true
+
+[capabilities.deletion]
+product = false
+adapter = false
+
+[capabilities.provenance]
+product = false
+adapter = true
+
+[capabilities.export]
+product = false
+
+[capabilities.same_system_recovery]
+product = false
+
+[notes]
+controlled = "describe the controlled configuration"
+native = "describe the native configuration or why it is not implemented"

@@ -1,0 +1,40 @@
+# Mem0 OSS capability manifest (AMSB, researched configuration)
+# Source: capability-attribution-v1 and corrected Semantic Exit findings.
+provider = "mem0"
+version = "2.0.17"
+upstream_commit = "3f39fba28f7781aaf581f64a4af39d017af65835"
+
+[tracks]
+controlled = true
+native = true
+
+[capabilities.retrieval]
+product = true
+
+[capabilities.temporal_filtering]
+product = false
+runner = true
+
+[capabilities.principal_isolation]
+product = true   # native user_id search filter
+
+[capabilities.scope]
+product = "partial"
+runner = true
+
+[capabilities.deletion]
+product = true
+
+[capabilities.provenance]
+product = "partial"
+adapter = true
+
+[capabilities.export]
+product = "partial"   # get_all + history(memory_id)
+
+[capabilities.same_system_recovery]
+product = "partial"
+
+[notes]
+controlled = "infer=False, local Chroma, FastEmbed BAAI/bge-small-en-v1.5, telemetry disabled"
+native = "product-native extraction available and exercised in research"

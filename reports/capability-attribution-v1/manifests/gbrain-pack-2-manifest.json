@@ -1,0 +1,98 @@
+{
+  "attempt_rows": 126,
+  "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+  "completed_at": "2026-08-07T17:47:27.861718+00:00",
+  "dataset_commitment": {
+    "actual": {
+      "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+      "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+      "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+    },
+    "expected": {
+      "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+      "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+      "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+    },
+    "passed": true
+  },
+  "dataset_hashes": {
+    "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+    "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+    "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+  },
+  "dataset_quality": {
+    "events": 88,
+    "gold_rows": 64,
+    "issues": [],
+    "pack": "pack-2",
+    "passed": true,
+    "queries": 64,
+    "selected_ids": [
+      "pack2_query_0050",
+      "pack2_query_0051",
+      "pack2_query_0056",
+      "pack2_query_0001",
+      "pack2_query_0002",
+      "pack2_query_0003",
+      "pack2_query_0004",
+      "pack2_query_0005",
+      "pack2_query_0006",
+      "pack2_query_0007",
+      "pack2_query_0008",
+      "pack2_query_0009",
+      "pack2_query_0010",
+      "pack2_query_0011",
+      "pack2_query_0012",
+      "pack2_query_0054",
+      "pack2_query_0055",
+      "pack2_query_0059",
+      "pack2_query_0052",
+      "pack2_query_0053"
+    ],
+    "selected_queries": 20
+  },
+  "deletion_rows": 2,
+  "ingestion": {
+    "delete_events": [
+      {
+        "event_id": "pack2_event_0077",
+        "product_delete_returned": true,
+        "target_event_id": "pack2_event_0076"
+      },
+      {
+        "event_id": "pack2_event_0079",
+        "product_delete_returned": true,
+        "target_event_id": "pack2_event_0078"
+      }
+    ],
+    "ingested": 86,
+    "upserts": 86
+  },
+  "ledger": {
+    "cost_usd": 0.114604,
+    "input_tokens": 386959,
+    "output_tokens": 215821,
+    "requests": 257,
+    "returned_models": [
+      "deepseek-v4-flash"
+    ]
+  },
+  "pack": "pack-2",
+  "preregistration_commit": "47493191daa11cc02549f997742dd5b82e5214c8",
+  "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+  "provider": "gbrain",
+  "provider_commit": "15b9863d13635d173562a54f55a1d388bfcf546b",
+  "provider_stats": {
+    "gbrain_bin": "<bun-install gbrain cli path>",
+    "gbrain_commit": "15b9863d13635d173562a54f55a1d388bfcf546b",
+    "pages": 84
+  },
+  "reader_errors": 1,
+  "retrieval_rows": 20,
+  "schema": "sovbench/capability-attribution-run/1",
+  "split": "test",
+  "started_at": "2026-08-07T17:29:17.494246+00:00",
+  "state_hash": "c9d76c75a1eaa25fe6fef3df4042a4637765a1c601058f95b1122ab30aabd2f0",
+  "status": "completed",
+  "temporal_status": "paired"
+}

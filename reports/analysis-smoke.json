@@ -1,0 +1,3624 @@
+{
+  "blocks_field": "subject",
+  "comparisons": {
+    "chain_complete@5": [
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-008",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-009",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-010",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-011",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-012",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-007",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-009",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-010",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-011",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-012",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-008",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-010",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-011",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-012",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-009",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-011",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-012",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-010",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-012",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-011",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-013",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-012",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-014",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-013",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-015",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-014",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-016",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-015",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-017",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-016",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-018",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-017",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-019",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-018",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-020",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-019",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": -0.95,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-021",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-020",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.05,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-022",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 1.0,
+          "ci_low": 0.95,
+          "observed_mean_diff": 0.982759,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": -0.05,
+          "observed_mean_diff": -0.017241,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-021",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 8,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": null
+      },
+      {
+        "a": "2026-08-01-022",
+        "b": "2026-08-01-023",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-022",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -0.962963,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.986111,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-022",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-022",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-022",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -0.962963,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.986111,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-023",
+        "b": "2026-08-01-024",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.037037,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.013889,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-023",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 1.0,
+          "ci_low": 1.0,
+          "observed_mean_diff": 1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-023",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-023",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.037037,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.013889,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-024",
+        "b": "2026-08-01-025",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 1.0,
+          "ci_low": 0.962963,
+          "observed_mean_diff": 0.986111,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-024",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.0,
+          "ci_low": -0.037037,
+          "observed_mean_diff": -0.013889,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 5,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-024",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.0,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-025",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -1.0,
+          "ci_low": -1.0,
+          "observed_mean_diff": -1.0,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-025",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -0.962963,
+          "ci_low": -1.0,
+          "observed_mean_diff": -0.986111,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-026",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.037037,
+          "ci_low": 0.0,
+          "observed_mean_diff": 0.013889,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      }
+    ],
+    "evidence_precision": [
+      {
+        "a": "2026-08-01-025",
+        "b": "2026-08-01-026",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -0.843373,
+          "ci_low": -0.963855,
+          "observed_mean_diff": -0.9,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 0,
+          "b_wins": 0,
+          "discordant": 0,
+          "p_value": 1.0
+        }
+      },
+      {
+        "a": "2026-08-01-025",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": -0.424658,
+          "ci_low": -0.556962,
+          "observed_mean_diff": -0.4875,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      },
+      {
+        "a": "2026-08-01-026",
+        "b": "2026-08-01-027",
+        "bootstrap": {
+          "blocks": 9,
+          "ci_high": 0.45122,
+          "ci_low": 0.364865,
+          "observed_mean_diff": 0.4125,
+          "resamples": 200,
+          "seed": 20260805
+        },
+        "mcnemar": {
+          "a_wins": 5,
+          "b_wins": 0,
+          "discordant": 5,
+          "p_value": 0.0625
+        }
+      }
+    ]
+  },
+  "failures": {
+    "invalid_runs": [
+      "2026-08-01-001",
+      "2026-08-01-002",
+      "2026-08-01-003",
+      "2026-08-01-004",
+      "2026-08-01-005",
+      "2026-08-01-006"
+    ],
+    "reader_error_attempts": 0
+  },
+  "resamples": 200,
+  "runs": {
+    "2026-08-01-001": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-002": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-003": {
+      "all_success_rate": 0.0154,
+      "attempts": 65,
+      "pass_at_1": 0.0154,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-004": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-005": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-006": {
+      "all_success_rate": 0.0154,
+      "attempts": 65,
+      "pass_at_1": 0.0154,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "unknown"
+    },
+    "2026-08-01-007": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-008": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-009": {
+      "all_success_rate": 0.0308,
+      "attempts": 65,
+      "pass_at_1": 0.0308,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-010": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-011": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-012": {
+      "all_success_rate": 0.0308,
+      "attempts": 65,
+      "pass_at_1": 0.0308,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-013": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-014": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-015": {
+      "all_success_rate": 0.0308,
+      "attempts": 65,
+      "pass_at_1": 0.0308,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-016": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-017": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-018": {
+      "all_success_rate": 0.0308,
+      "attempts": 65,
+      "pass_at_1": 0.0308,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-019": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-020": {
+      "all_success_rate": 0.1077,
+      "attempts": 65,
+      "pass_at_1": 0.1077,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-021": {
+      "all_success_rate": 0.0308,
+      "attempts": 65,
+      "pass_at_1": 0.0308,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-022": {
+      "all_success_rate": 0.1,
+      "attempts": 80,
+      "pass_at_1": 0.1,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-023": {
+      "all_success_rate": 0.1,
+      "attempts": 80,
+      "pass_at_1": 0.1,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-024": {
+      "all_success_rate": 0.0375,
+      "attempts": 80,
+      "pass_at_1": 0.0375,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-025": {
+      "all_success_rate": 0.1,
+      "attempts": 80,
+      "pass_at_1": 0.1,
+      "provider": "no-memory",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-026": {
+      "all_success_rate": 0.1,
+      "attempts": 80,
+      "pass_at_1": 0.1,
+      "provider": "oracle",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    },
+    "2026-08-01-027": {
+      "all_success_rate": 0.0375,
+      "attempts": 80,
+      "pass_at_1": 0.0375,
+      "provider": "bm25-sqlite-fts",
+      "semantic_reader_validated": false,
+      "status": "completed_plumbing"
+    }
+  },
+  "seed": 20260805
+}

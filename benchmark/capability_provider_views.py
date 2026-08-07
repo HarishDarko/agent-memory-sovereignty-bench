@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import importlib
 import re
 import time
 
@@ -30,6 +31,11 @@ def _metadata(event: Event, observed: dict | None = None) -> dict:
 
 def native_retrieve(provider, query: Query, *, event_catalog: list[Event] | None = None) -> RetrievalResult:
     """Retrieve using the provider's tested native query surface without post-filtering."""
+    view = _registered_native_view(provider.name)
+    if view:
+        module_name, _, function_name = view.partition(":")
+        function = getattr(importlib.import_module(module_name), function_name)
+        return function(provider, query, event_catalog)
     if provider.name == "gbrain":
         return _gbrain(provider, query, event_catalog)
     if provider.name == "mem0":
@@ -37,6 +43,23 @@ def native_retrieve(provider, query: Query, *, event_catalog: list[Event] | None
     if provider.name == "hindsight":
         return _hindsight(provider, query, event_catalog)
     raise ValueError(f"unsupported capability-attribution provider: {provider.name}")
+
+
+def _registered_native_view(name: str) -> str | None:
+    """Provider-specific native-view hook declared in the provider registry.
+
+    A Level-3 provider may implement ``native_retrieve(provider, query,
+    event_catalog)`` in its adapter and reference it from the registry entry
+    (``"native_view": "providers.<name>.adapter:native_retrieve"``). The
+    built-in views below remain the fallback for the researched providers.
+    """
+    try:
+        from providers.registry import registry_entry
+
+        entry = registry_entry(name) or {}
+        return entry.get("native_view")
+    except Exception:
+        return None
 
 
 def _event_map(provider, event_catalog: list[Event] | None) -> dict[str, Event]:

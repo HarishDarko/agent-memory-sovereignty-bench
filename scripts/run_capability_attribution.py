@@ -30,6 +30,7 @@ from benchmark.events import Query, load_events, load_ground_truth, load_queries
 from benchmark.hashing import hash_dir, sha256_file, sha256_text
 from benchmark.model_gateway import get_gateway
 from benchmark.providers import RetrievedItem, RetrievalResult
+from providers.registry import create_provider
 from benchmark.scorer import Scorer
 from benchmark.token_budget import format_evidence
 from benchmark.snapshots import check_no_mutation
@@ -40,11 +41,6 @@ RUN_ROOT = REPO_ROOT / "runs" / "followups" / "capability-attribution-v1"
 TEST_ROOT = REPO_ROOT / "scorer_private" / "test-v1"
 DEV_ROOT = REPO_ROOT / "datasets" / "dev" / "personal"
 PREREG_COMMIT = "4749319"
-PROVIDER_COMMITS = {
-    "gbrain": "15b9863d13635d173562a54f55a1d388bfcf546b",
-    "mem0": "3f39fba28f7781aaf581f64a4af39d017af65835",
-    "hindsight": "797faf7981ce9332e2ce7c922471b72b506b4065",
-}
 PRICE_INPUT = 0.14
 PRICE_OUTPUT = 0.28
 
@@ -340,20 +336,12 @@ def _dataset_quality(pack: str, events, queries, gold, selected: list[SelectedQu
     }
 
 
-def _provider_factory(name: str, state_dir: Path):
-    if name == "gbrain":
-        from providers.gbrain.adapter import make_gbrain
+def _provider_commit(name: str) -> str:
+    """Exact upstream pin from the provider registry (single source of truth)."""
+    from providers.registry import registry_entry
 
-        return make_gbrain(state_dir)
-    if name == "mem0":
-        from providers.mem0.adapter import make_mem0
-
-        return make_mem0(state_dir)
-    if name == "hindsight":
-        from providers.hindsight.adapter import make_hindsight
-
-        return make_hindsight(state_dir, api_url=os.environ.get("HINDSIGHT_API_URL"))
-    raise ValueError(f"unknown provider: {name}")
+    entry = registry_entry(name) or {}
+    return (entry.get("meta") or {}).get("upstream_commit", "unknown")
 
 
 def _ledger_summary(path: Path) -> dict:
@@ -493,7 +481,7 @@ def run_pack(provider_name: str, split: str, pack: str, gateways: dict, provider
         "split": split,
         "pack": pack,
         "provider": provider_name,
-        "provider_commit": PROVIDER_COMMITS[provider_name],
+        "provider_commit": _provider_commit(provider_name),
         "preregistration_commit": _git_value("rev-parse", PREREG_COMMIT),
         "code_commit": _git_value("rev-parse", "HEAD"),
         "protocol_hash": hash_dir(PROTOCOL_DIR),
@@ -504,7 +492,7 @@ def run_pack(provider_name: str, split: str, pack: str, gateways: dict, provider
     }
     _write_json(manifest_path, manifest)
     try:
-        provider = _provider_factory(provider_name, run_dir / "provider-state")
+        provider = create_provider(provider_name, run_dir / "provider-state")
         upserts = [event for event in events if event.operation == "upsert"]
         lifecycle = [event for event in events if event.operation == "delete"]
         ingest = provider.ingest(upserts)

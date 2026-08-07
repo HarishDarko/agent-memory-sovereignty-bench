@@ -1,0 +1,101 @@
+{
+  "attempt_rows": 126,
+  "code_commit": "97f1f81974e0d32f417fd959db1c8bc946c0fcae",
+  "completed_at": "2026-08-07T18:25:10.962531+00:00",
+  "dataset_commitment": {
+    "actual": {
+      "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+      "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+      "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+    },
+    "expected": {
+      "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+      "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+      "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+    },
+    "passed": true
+  },
+  "dataset_hashes": {
+    "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+    "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+    "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+  },
+  "dataset_quality": {
+    "events": 88,
+    "gold_rows": 64,
+    "issues": [],
+    "pack": "pack-1",
+    "passed": true,
+    "queries": 64,
+    "selected_ids": [
+      "pack1_query_0050",
+      "pack1_query_0051",
+      "pack1_query_0056",
+      "pack1_query_0001",
+      "pack1_query_0002",
+      "pack1_query_0003",
+      "pack1_query_0004",
+      "pack1_query_0005",
+      "pack1_query_0006",
+      "pack1_query_0007",
+      "pack1_query_0008",
+      "pack1_query_0009",
+      "pack1_query_0010",
+      "pack1_query_0011",
+      "pack1_query_0012",
+      "pack1_query_0054",
+      "pack1_query_0055",
+      "pack1_query_0059",
+      "pack1_query_0052",
+      "pack1_query_0053"
+    ],
+    "selected_queries": 20
+  },
+  "deletion_rows": 2,
+  "ingestion": {
+    "delete_events": [
+      {
+        "event_id": "pack1_event_0077",
+        "product_delete_returned": true,
+        "target_event_id": "pack1_event_0076"
+      },
+      {
+        "event_id": "pack1_event_0079",
+        "product_delete_returned": true,
+        "target_event_id": "pack1_event_0078"
+      }
+    ],
+    "ingested": 86,
+    "upserts": 86
+  },
+  "ledger": {
+    "cost_usd": 0.062131,
+    "input_tokens": 223273,
+    "output_tokens": 110261,
+    "requests": 127,
+    "returned_models": [
+      "deepseek-v4-flash"
+    ]
+  },
+  "pack": "pack-1",
+  "preregistration_commit": "47493191daa11cc02549f997742dd5b82e5214c8",
+  "protocol_hash": "6ffa915a9e0913d4b0335100a5bd0c7d46b76d4943033c8b6255da4c456a0576",
+  "provider": "mem0",
+  "provider_commit": "3f39fba28f7781aaf581f64a4af39d017af65835",
+  "provider_stats": {
+    "embedder": "fastembed",
+    "llm": "none (infer=False)",
+    "mem0_commit": "3f39fba28f7781aaf581f64a4af39d017af65835",
+    "memories": 84,
+    "telemetry": "disabled",
+    "vector_store": "chroma"
+  },
+  "reader_errors": 1,
+  "retrieval_rows": 20,
+  "schema": "sovbench/capability-attribution-run/1",
+  "split": "test",
+  "started_at": "2026-08-07T18:07:10.081407+00:00",
+  "state_hash": "021190f9cce0515a8e769da32cfea83bd30d060b88c794cac28d32b1236deb39",
+  "status": "completed",
+  "temporal_status": "paired"
+}

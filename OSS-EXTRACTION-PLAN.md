@@ -1,9 +1,9 @@
 # AMSB Extraction and Architecture Audit
 
 **Date:** 2026-08-07
-**Source repository (read-only):** `C:\Users\haris\Documents\Codex\memory-sovereignty-bench`
+**Source repository (read-only):** `C:\Users\<user>\Documents\Codex\memory-sovereignty-bench`
 **Source HEAD:** `bee627be0165e4b5ef5ea91ffd0c74bc52a75bf7` (239 tracked files)
-**Target repository:** `C:\Users\haris\Documents\Codex\agent-memory-sovereignty-bench`
+**Target repository:** `C:\Users\<user>\Documents\Codex\agent-memory-sovereignty-bench`
 
 This file classifies every major source component and answers the provider
 extensibility question before any refactoring. The source repository is

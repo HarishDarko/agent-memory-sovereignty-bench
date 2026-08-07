@@ -8,15 +8,9 @@ __pycache__/
 dist/
 build/
 
-# Run artifacts (kept out of git; see runs/.gitkeep)
+# Run artifacts (per-run manifests, traces, provider state)
 runs/*
 !runs/.gitkeep
-
-# Reports
-reports/*
-!reports/.gitkeep
-!reports/protocol-v1/
-!reports/protocol-v1/*
 
 # Private scorer state (hidden test gold lives here; released only after results are frozen)
 scorer_private/*
