@@ -1,89 +1,246 @@
-# Memory Sovereignty Benchmark
+# Agent Memory Sovereignty Bench (AMSB)
 
-Controlled, isolated benchmark of AI memory systems. The central question is
-not just "which memory has the best recall" but:
+> A provider-neutral evaluation framework for persistent agent memory,
+> covering controlled vs native behavior, lifecycle guarantees, recovery,
+> and capability attribution.
 
-> Can an AI memory system maintain correct, authorized, erasable, evolving,
-> useful, user-owned state under controlled conditions - and can that state
-> survive the loss or replacement of the memory provider itself?
+AMSB evaluates more than retrieval recall. It measures what the memory
+product itself provides, what the benchmark or application provides on its
+behalf, and whether lifecycle guarantees such as deletion, isolation,
+as-of filtering, provenance, and recovery actually hold.
 
-Canonical plan (source of truth):
-[Memory Sovereignty Benchmark - Final Research & Execution Plan](https://app.notion.com/p/3b4916c73ada81f8b196e8952eed8554)
+## Why AMSB exists
 
-Repo-local working reference: [SPEC.md](SPEC.md).
+Memory benchmarks typically report a recall or QA number. That number cannot
+answer the questions that matter when choosing or building agent memory:
 
-## Status
+- What does the memory product itself provide?
+- What does the benchmark or application provide on its behalf?
+- What changes when the product's real memory-formation pipeline is enabled?
+- Can future information leak into historical queries?
+- Can one principal retrieve another principal's memories?
+- Are scope boundaries enforced natively or by the runner?
+- Does deletion actually remove evidence from bounded retrieval?
+- Can a runtime be destroyed and rebuilt from retained state?
+- What exactly survives export?
+- Which layer supplied provenance, authority, temporal filtering, isolation,
+  deletion, and answer correctness?
 
-**Phase 0 corrected (current): harness/methodology validation.** The orchestrator, model
-gateway stub, private deterministic scorer, snapshot/restore, token budget,
-run manifests, and the contamination preflight suite run end-to-end with three
-controls only:
+## The capability-attribution problem
 
-- no-memory (reader must abstain)
-- oracle (reader receives exact gold evidence)
-- BM25 / SQLite FTS baseline (how far simple retrieval gets us)
+AMSB's signature reporting model attributes every observed capability to one
+of five layers:
 
-No memory systems (GBrain, OptMem, Mem0, Hindsight, ...) are installed or
-benchmarked yet. API cost during Phase 0 is effectively $0: the gateway runs in
-`offline` mode with a deterministic stub.
+| Layer | Role |
+|---|---|
+| Product | the memory system itself (storage, retrieval, native lifecycle) |
+| Adapter | AMSB's provider integration (event mapping, metadata, lifecycle translation) |
+| Runner | the benchmark orchestration (eligibility filtering, state checks) |
+| Reader | the common stateless model that answers from evidence |
+| Scorer | the deterministic private scorer that judges answers |
 
-These runs are labeled `completed_plumbing` and are **not publishable benchmark
-results**. Runtime container-egress and semantic-reader controls remain not
-applicable until Phase 0.5, and each manifest records those gaps. See the
-[Phase 0 audit](docs/research/2026-08-05-phase0-audit.md) and the
-[remaining-phases plan](docs/superpowers/plans/2026-08-05-memory-sovereignty-remaining-phases.md).
+Core rule: **do not call a benchmark-enforced property a memory-product
+capability.** A successful governance result may be implemented partly or
+entirely outside the product. Every provider carries a capability manifest
+that states, per capability, whether it is product-native, adapter-supplied,
+runner-supplied, partial, or unsupported.
 
-## Quickstart (Windows host, Phase 0)
+## What AMSB evaluates
 
-```powershell
-uv sync --frozen
-uv run --frozen python scripts\generate_dev_corpus.py
-uv run --frozen python -m unittest discover -s tests -v
-uv run --frozen python scripts\run_phase0.py
-```
+- Controlled vs product-native behavior (kept separate, never merged)
+- Temporal / as-of evaluation and future-information leakage
+- Principal isolation and scope enforcement
+- Provenance and authority-conflict resolution
+- Lifecycle: ingestion, deletion, export, recovery
+- Capability attribution matrix per provider
+- Fail-closed invariants: state-hash equality, read-only retrieval, no gold
+  access, deterministic clock
+- Exact provider/version pinning and reproducible manifests
+- Reader/scorer separation with a stateless common reader
 
-Docker Desktop's WSL2 Linux engine is the target runtime for real providers.
-The Compose file currently passes static rendering, but runtime isolation is
-not certified until Phase 0.5 probes pass. See
-`docker/README.md` and `scripts/check_environment.py`.
+## Controlled vs native evaluation
 
-## Layout
+**Controlled track:** canonical AMSB events are ingested through the adapter
+with normalized semantics; the benchmark applies eligibility/governance
+where the protocol requires; a common reader and scorer judge the result.
+Question: how does the underlying system store and retrieve evidence given
+normalized memory objects?
+
+**Native track:** raw events go through the provider's real memory pipeline
+(extraction, consolidation, reflection, graph construction) with native
+retrieval. Question: what does the actual product do with the same events?
+
+Native behavior is preserved, not normalized away, and the native track is
+optional per provider. See [docs/controlled-vs-native.md](docs/controlled-vs-native.md).
+
+## Adding a new memory provider
+
+A contributor adds a provider without modifying the central runner, scorer,
+metrics, datasets, or gold:
 
 ```text
-benchmark/        orchestrator, gateway, scorer, snapshots, manifests, lifecycle
-contamination/    preflight isolation suite
-providers/        provider adapters (baselines now; memory systems in Phase 1+)
-datasets/dev/     public synthetic development corpus (events, queries, gold)
-datasets/private_test/  hidden test split (gitignored until release)
-scorer_private/   private scorer state / hidden gold (gitignored until release)
-prompts/          versioned reader prompts
-docker/           WSL2/Docker clean-room pattern (one provider per run)
-scripts/          corpus generator, Phase 0 runner, environment checks
-tests/            harness verification suite (stdlib unittest)
-runs/             per-run artifacts (manifests, traces, scores) - gitignored
-reports/          aggregated summaries - gitignored
+fork AMSB
+   -> copy templates/provider/ to providers/<name>/
+   -> implement the adapter (MemoryProvider interface)
+   -> declare capabilities in manifest.toml
+   -> register in providers/registry.json (one entry)
+   -> run python scripts/validate_provider.py --provider <name>
+   -> run controlled DEV evaluation
+   -> run the native track if supported
+   -> receive standard AMSB metrics and attribution output
 ```
 
-## Cost and isolation rules (Phase 0)
+Provider integration levels:
 
-- Gateway stays in `offline` mode; the DeepSeek configuration exists but is
-  only active when `SOVBENCH_GATEWAY_MODE=deepseek` and a key is supplied.
-- Deterministic benchmark clock; never wall-clock "today" for scoring.
-- One provider per run, per-checkpoint event replay, per-query state restore,
-  and fail-closed read-only retrieval checks.
-- Gold answers never enter provider state, provider containers, or prompts.
-- No leaderboard result is trusted unless preflight proves the environment is
-  isolated.
+- **Level 1 - Controlled Retrieval Provider:** reset, ingest normalized
+  memory, retrieve candidates.
+- **Level 2 - Lifecycle/Governance Provider:** any supported subset of
+  deletion, principal isolation, scope, history, export, recovery.
+- **Level 3 - Product-Native Provider:** provider-native extraction,
+  consolidation, native retrieval policies, optional native-view hook.
 
-## Reader model identity
+Level 1 is enough to contribute. Unsupported capabilities are declared
+unsupported, never faked.
 
-The planned reader uses the official `deepseek-v4-flash` API alias, whose
-2026-07-31 dated release is **DeepSeek-V4-Flash-0731**. “DeepSeek V4 Plus 07-31”
-is not used as a scientific identifier because no reviewed official source
-defines that name. Every real run records requested and returned identity; the
-current offline stub makes no DeepSeek call.
+Full tutorial: [docs/adding-a-provider.md](docs/adding-a-provider.md).
+Capability vocabulary: [docs/provider-capabilities.md](docs/provider-capabilities.md).
 
-## Contributing protocol
+## Supported providers
 
-See [AGENTS.md](AGENTS.md). The repo is a clean room: no real personal/project
-files, no gold in provider paths, and no real provider installs until Phase 1.
+Existing validated integrations (exact pins preserved from the research):
+
+| Provider | Controlled | Native | Deletion | Principal | Scope | Export | Recovery |
+|---|---|---|---|---|---|---|---|
+| Mem0 OSS 2.0.17 | yes | yes | native | native | partial | partial | partial |
+| Hindsight 0.8.6 | yes | yes | native | assisted | assisted | yes | yes |
+| GBrain 0.42.73.2 | yes | partial | native | assisted | assisted | yes | yes |
+| OptMem 1fb164c | yes | no | unsupported | assisted | assisted | partial | partial |
+
+This table is integration/test coverage, not a provider quality ranking.
+See [docs/provider-support.md](docs/provider-support.md) and each provider's
+`manifest.toml`.
+
+## Quick start
+
+Requirements: Python 3.11-3.12, [uv](https://docs.astral.sh/uv/), Git.
+No paid services are needed for the smoke test or DEV runs.
+
+```bash
+git clone <future-url> agent-memory-sovereignty-bench
+cd agent-memory-sovereignty-bench
+uv sync
+uv run pytest
+```
+
+Provider integrations need their own dependencies:
+
+```bash
+uv sync --extra mem0     # Mem0 OSS (local Chroma + FastEmbed)
+# GBrain needs the pinned gbrain CLI via Bun (see providers/gbrain/README.md)
+# Hindsight needs the pinned server via Docker (see docker/providers/hindsight/)
+```
+
+## Run a local smoke test
+
+```powershell
+uv run python scripts\validate_provider.py --provider bm25-pure
+uv run python scripts\run_phase0.py
+```
+
+The Phase 0 runner exercises the controls (no-memory, oracle, BM25/SQLite
+FTS) with the offline deterministic reader at effectively zero cost.
+
+## Run controlled evaluation
+
+```powershell
+uv run python scripts\run_provider_dev.py --provider mem0
+```
+
+DEV uses the public corpus under `datasets/dev/personal/`. The controlled
+configuration for every provider is frozen and recorded in
+`providers/<name>/config.toml`.
+
+## Run native evaluation
+
+Native runs use the provider's own pipeline. Refer to the provider README
+and `docs/controlled-vs-native.md`; native behavior is reported separately
+from controlled behavior.
+
+## Capability Attribution Matrix
+
+The experiment that quantifies layer attribution, its preregistration, and
+the matrix are in:
+
+- [docs/capability-attribution.md](docs/capability-attribution.md)
+- [docs/reports/capability-attribution-v1.md](docs/reports/capability-attribution-v1.md)
+- [reports/capability-attribution-v1/](reports/capability-attribution-v1/) (analysis artifacts)
+
+Headline finding: temporal/current-state correctness and principal isolation
+were largely runner-supplied for two of the three researched providers, while
+deletion was product-native for all three. Benchmark results should therefore
+carry layer attribution.
+
+## Lifecycle / deletion
+
+See [docs/lifecycle-and-deletion.md](docs/lifecycle-and-deletion.md).
+Deletion is exercised through each provider's native API; adapters map
+abstract delete events to that API. Unsupported deletion is recorded as
+unsupported.
+
+## Recovery / Semantic Exit
+
+See [docs/recovery-and-portability.md](docs/recovery-and-portability.md).
+Portability is reported across four separate concepts: state ownership,
+same-system recoverability, semantic portability, and behavioral portability.
+Same-system recovery does not imply semantic or behavioral portability, and
+no cross-provider migration was executed in this research.
+
+## Research results
+
+- [docs/reports/](docs/reports/) - Task 15 review, Semantic Exit original,
+  errata, and corrected reports, GBrain supplement, publication readiness,
+  capability attribution v1, final publication decision
+- [reports/protocol-v1/](reports/protocol-v1/) - frozen V1 result tables
+- [reports/capability-attribution-v1/](reports/capability-attribution-v1/) -
+  capability-attribution analysis artifacts and run manifests
+
+## Corrections
+
+The research trail preserves original conclusions, errata, and corrected
+findings rather than rewriting history:
+
+- [docs/research-history/README.md](docs/research-history/README.md)
+- Original Semantic Exit: `docs/reports/semantic-memory-exit-v1.md`
+- Errata: `docs/reports/semantic-memory-exit-v1-errata.md`
+- Corrected: `docs/reports/semantic-memory-exit-v1-corrected.md`
+
+## Reproduction
+
+Four reproduction levels are documented in
+[docs/reproduction.md](docs/reproduction.md): local smoke, public DEV,
+provider integration, and research reproduction. Hidden TEST gold, live
+credentials, and private run artifacts remain unavailable by design; the
+published commitment hashes prove the hidden packs existed before execution.
+
+## What AMSB is NOT
+
+AMSB is not a universal memory leaderboard and does not identify a single
+"best" memory system. Results depend on provider version, configuration,
+corpus, reader model, retrieval behavior, adapter implementation, and
+benchmark protocol. AMSB is not proof that a provider is superior,
+universally insecure, or that memory portability is solved or unsolved.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and [docs/known-technical-debt.md](docs/known-technical-debt.md).
+New provider adapters, configuration corrections, lifecycle tests, recovery
+tests, attribution properties, reproducibility improvements, documentation,
+and bug fixes are welcome.
+
+## Citation
+
+See [CITATION.cff](CITATION.cff).
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
