@@ -6,7 +6,7 @@ Existing integrations (exact researched pins, preserved unchanged):
 |---|---|---:|---:|---|---|---|---|---|
 | Mem0 OSS | 2.0.17 (`3f39fba...`) | yes | yes | native | native | partial | partial | partial |
 | Hindsight | 0.8.6 (`797faf7...`) | yes | yes | native | assisted | assisted | yes | yes |
-| GBrain | 0.42.73.2 (`15b9863d...`) | yes | partial | native | assisted | assisted | yes | yes |
+| GBrain | 0.42.73.2 (`15b9863d...`) | yes | no* | native | assisted | assisted | yes | yes |
 | OptMem | 1fb164c | yes | no | unsupported | assisted | assisted | partial | partial |
 
 Coverage notes:
@@ -16,6 +16,12 @@ Coverage notes:
 - "partial" means some aspects are native and others are supplied.
 - OptMem's pinned upstream has no license file; treat as all-rights-reserved
   and review before use.
+- *GBrain native TEST was not run. A supplementary local-embedding native
+  configuration was evaluated on DEV (Ollama `snowflake-arctic-embed:335m`)
+  but did not pass the preregistered quality guardrail (DEV Recall@5 below
+  the 0.85 threshold), so it did not proceed to hidden TEST. The adapter's
+  local-embedding code paths are adapter capability, not a validated
+  research result. See `docs/reports/gbrain-native-local-supplement.md`.
 
 This is integration/test coverage. It is not a provider quality ranking, and
 results depend on the exact pins and configurations recorded in each

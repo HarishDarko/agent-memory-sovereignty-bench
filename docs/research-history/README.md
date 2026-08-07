@@ -17,8 +17,9 @@ all kept.
    and `docs/reports/semantic-memory-exit-v1-corrected.md`.
 4. **Capability Attribution v1** - `docs/reports/capability-attribution-v1.md`
    with preregistration and deviations in `protocols/capability-attribution-v1/`.
-5. **Publication Readiness Review** - `docs/reports/publication-readiness-review.md`
-   and `docs/reports/final-publication-decision.md`.
+5. **Scientific audit and release hardening** - `docs/scientific-audit.md`
+   documents interpretation constraints on the capability-attribution
+   evidence.
 
 ## Retracted or corrected conclusions
 

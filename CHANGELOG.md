@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 (2026-08-07)
+## 0.1.0 (2026-08-07)
 
 Initial open-source release of AMSB, curated from the research repository
 `memory-sovereignty-bench` (source HEAD `bee627b`).

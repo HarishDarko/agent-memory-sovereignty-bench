@@ -31,8 +31,8 @@ treated as read-only; all OSS work happens in the target.
 | Path | Notes |
 |---|---|
 | `protocols/v1/`, `protocols/capability-attribution-v1/` | Frozen protocols, preregistration, deviations, reader prompts |
-| `docs/reports/` | Task 15 review, Semantic Exit original/errata/corrected, GBrain supplement, publication readiness, capability attribution v1, final publication decision |
-| `docs/final-reports/` (minus four untracked synthesis files) | Consolidated report copies |
+| `docs/reports/` | Task 15 review, Semantic Exit original/errata/corrected, GBrain supplement, capability attribution v1 |
+| `docs/final-reports/` | Removed in release hardening: a duplicate copy folder whose content is canonical under `docs/reports/` and `docs/review/` |
 | `docs/review/` | Independent-review package and provider config summaries |
 | `docs/research/` | Research landscape, Phase 0 audit, provider version log |
 | `reports/protocol-v1/` | Frozen V1 result tables (controlled/native per provider) |

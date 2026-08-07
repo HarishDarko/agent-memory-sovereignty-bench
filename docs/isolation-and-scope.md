@@ -32,6 +32,13 @@ product. GBrain's global CLI search and Hindsight's single-bank recall do
 not; their isolation in this benchmark is runner-supplied. The preregistered
 security-count exception applies to the nonzero-to-zero leakage transitions.
 
+Caveat: the assisted scope condition (`D1-assisted`) also applied temporal
+eligibility filtering (`available_at <= as_of`), so the correctness deltas
+above combine scope and temporal interventions. The cross-principal
+evidence exposure (raw counts and their removal) is directly observed;
+attributing the full correctness delta to scope filtering alone is not
+supported. See `docs/scientific-audit.md`.
+
 ## Contamination preflight
 
 `contamination/` implements the preflight suite: egress checks, cross-user

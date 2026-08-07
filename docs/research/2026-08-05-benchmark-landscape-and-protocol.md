@@ -214,6 +214,4 @@ The final preflight and analysis must cover at least these channels:
 
 ## 9. Publication standard
 
-A public result bundle must contain code commit, dirty-tree status, environment lock, container image digests, upstream commits, configs, corpus and prompt hashes, model attestation, preflight evidence, raw traces with private values redacted only through a documented release transform, scores, uncertainty analysis, failures, exclusions, and a reproduction command. The article and LinkedIn summary must be generated from the frozen result tables—not written first and fitted to the data later.
-
-The strongest career signal is not a dramatic winner. It is a benchmark whose negative results, ties, unsupported capabilities, contamination failures, and limitations are as visible as positive findings.
+A public result bundle must contain code commit, dirty-tree status, environment lock, container image digests, upstream commits, configs, corpus and prompt hashes, model attestation, preflight evidence, raw traces with private values redacted only through a documented release transform, scores, uncertainty analysis, failures, exclusions, and a reproduction command. Any public summary must be generated from the frozen result tables, not written first and fitted to the data later.

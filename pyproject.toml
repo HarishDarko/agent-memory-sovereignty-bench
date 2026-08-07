@@ -1,6 +1,6 @@
 [project]
 name = "agent-memory-sovereignty-bench"
-version = "1.0.0"
+version = "0.1.0"
 description = "Agent Memory Sovereignty Bench (AMSB): provider-neutral evaluation of persistent agent memory covering controlled vs native behavior, lifecycle guarantees, recovery, and capability attribution."
 readme = "README.md"
 requires-python = ">=3.11,<3.13"

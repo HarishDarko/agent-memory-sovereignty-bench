@@ -6,7 +6,8 @@ upstream_commit = "15b9863d13635d173562a54f55a1d388bfcf546b"
 
 [tracks]
 controlled = true
-native = "partial"   # controlled keyword configuration; native track partial
+native = "not_run"   # supplementary local-embedding native config failed the
+                     # preregistered DEV guardrail; hidden TEST was not run
 
 [capabilities.retrieval]
 product = true

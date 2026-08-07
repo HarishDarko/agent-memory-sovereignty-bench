@@ -4,7 +4,7 @@
 
 ## Project
 
-Agent Memory Sovereignty Bench (AMSB), v1.0.0. Provider-neutral evaluation
+Agent Memory Sovereignty Bench (AMSB), v0.1.0. Provider-neutral evaluation
 framework for persistent agent memory.
 
 ## Extraction status
@@ -97,10 +97,11 @@ end-to-end with preflight PASS on all six controls.
 
 ## Native-track readiness
 
-Ready as documented. Native declarations exist for Mem0 and Hindsight;
-GBrain native is partial (controlled keyword configuration); OptMem native
-is not implemented. Native behavior is reported separately from controlled
-behavior.
+Ready as documented. Native declarations exist for Mem0 and Hindsight.
+GBrain native TEST was not run: a supplementary local-embedding native
+configuration was evaluated on DEV but failed the preregistered quality
+guardrail, so it did not proceed to hidden TEST. OptMem native is not
+implemented. Native behavior is reported separately from controlled behavior.
 
 ## Tests
 
@@ -131,7 +132,8 @@ Recorded in `docs/known-technical-debt.md`; none blocks release.
    are recorded-hash based in AMSB.
 5. Decide whether to publish hidden-TEST gold at a later date (currently
    excluded; commitments published).
-6. Reviewer pass over `docs/review/` material before any public claims.
+6. Independent reviewer pass over the release package before any public
+   claims.
 
 ## Final recommendation
 

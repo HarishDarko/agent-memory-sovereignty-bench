@@ -46,6 +46,11 @@ The correctness delta is not material by the strict rule, but the
 preregistered security-count exception applies to the leakage transition
 (nonzero to zero).
 
+Interpretation caveat: the assisted scope condition also applied temporal
+eligibility filtering; the delta combines scope and temporal interventions,
+while the raw cross-principal exposure counts are directly observed. See
+`docs/scientific-audit.md`.
+
 ## Deletion (descriptive)
 
 Raw deleted evidence after product-native deletion: 0 for GBrain, Mem0, and

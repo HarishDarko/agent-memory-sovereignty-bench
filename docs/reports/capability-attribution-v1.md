@@ -216,6 +216,13 @@ Attribution: Mem0's principal isolation is product-native; GBrain's global
 CLI search and Hindsight's single-bank recall are not, and their isolation in
 this benchmark is adapter/runner-supplied.
 
+Interpretation note (2026-08-07 audit): the assisted scope condition
+(`D1-assisted`) also applied temporal eligibility filtering
+(`available_at <= as_of`), so the correctness deltas above combine scope and
+temporal interventions. The raw cross-principal exposure counts and their
+removal are directly observed; attributing the full delta to scope filtering
+alone is not supported. See `docs/scientific-audit.md`.
+
 ## 12. Deletion attribution
 
 All three providers expose a native delete mechanism and the adapter maps
@@ -338,8 +345,8 @@ counts, typed scoring) rather than supplying the capability.
 ## 18. Comparison with prior work
 
 Sources: primary papers and official repositories recorded in
-`docs/research/2026-08-05-benchmark-landscape-and-protocol.md` and the frozen
-publication-readiness review, plus live web verification of AMB,
+`docs/research/2026-08-05-benchmark-landscape-and-protocol.md`, plus live web
+verification of AMB,
 LongMemEval, STATE-Bench, MemBench, MemSecBench, and GateMem.
 
 - AMB: overlaps on the ingest/retrieve/generate/judge pipeline and warns that
@@ -394,13 +401,14 @@ or that providers lack capabilities outside the tested configurations.
 - Any claim that the products cannot supply the assisted semantics in other
   configurations.
 
-## 21. Publication implications
+## 21. Interpretation and bounds
 
-The material temporal effect and the qualitative scope-leakage elimination
-support a paper whose thesis is that memory-governance benchmark numbers must
-carry layer attribution. The provenance metadata dependency is a candidate
-secondary finding once replicated with more queries. See
-`docs/reports/final-publication-decision.md` for venue-by-venue status.
+The material temporal effect and the qualitative scope-leakage transition are
+interpretation-sensitive: the assisted scope cells also applied temporal
+eligibility filtering (see `docs/scientific-audit.md`). The provenance
+metadata dependency is directional and underpowered (three queries per
+provider). Claims are bounded to the tested providers, pins, corpus, prompts,
+and reader.
 
 ## 22. Reproduction instructions
 
@@ -453,4 +461,4 @@ The preregistered maximum claim applies. The memory research phase ends here:
 no additional provider, dataset, model, migration study, enterprise
 benchmark, STATE-Bench integration, portability framework, or benchmark
 expansion is started. Out-of-scope observations are recorded under
-`docs/reports/final-publication-decision.md` as future work.
+`docs/limitations.md` and `docs/known-technical-debt.md` as future work.

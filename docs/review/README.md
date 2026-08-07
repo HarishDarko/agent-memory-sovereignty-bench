@@ -53,9 +53,10 @@ manifests, hashes, ledgers, and gateway traces.
 - `reviewer-checklist.md` — the reviewer checklist
 - `provider-configs/gbrain.md`, `provider-configs/mem0.md`,
   `provider-configs/hindsight.md` — provider configuration summaries for
-  maintainer review (do not send without instruction)
+  maintainer verification
 
 ## Canonical results
 
 `docs/reports/capability-attribution-v1.md` is the canonical report.
-`docs/reports/final-publication-decision.md` records venue status.
+Interpretation constraints on the results are documented in
+`docs/scientific-audit.md`.

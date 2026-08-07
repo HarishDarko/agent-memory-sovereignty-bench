@@ -9,6 +9,11 @@ product itself provides, what the benchmark or application provides on its
 behalf, and whether lifecycle guarantees such as deletion, isolation,
 as-of filtering, provenance, and recovery actually hold.
 
+Most memory benchmarks ask whether the right memory was retrieved. AMSB also
+asks which layer supplied the capability being scored:
+
+`Product -> Adapter -> Runner -> Reader -> Scorer`
+
 ## Why AMSB exists
 
 Memory benchmarks typically report a recall or QA number. That number cannot
@@ -113,8 +118,14 @@ Existing validated integrations (exact pins preserved from the research):
 |---|---|---|---|---|---|---|---|
 | Mem0 OSS 2.0.17 | yes | yes | native | native | partial | partial | partial |
 | Hindsight 0.8.6 | yes | yes | native | assisted | assisted | yes | yes |
-| GBrain 0.42.73.2 | yes | partial | native | assisted | assisted | yes | yes |
+| GBrain 0.42.73.2 | yes | no* | native | assisted | assisted | yes | yes |
 | OptMem 1fb164c | yes | no | unsupported | assisted | assisted | partial | partial |
+
+*GBrain native TEST was not run. A supplementary local-embedding native
+configuration was evaluated on DEV but did not pass the preregistered quality
+guardrail, so it did not proceed to hidden TEST. The adapter includes
+local-embedding code paths as adapter capability, not as a validated research
+result.
 
 This table is integration/test coverage, not a provider quality ranking.
 See [docs/provider-support.md](docs/provider-support.md) and each provider's
@@ -175,10 +186,20 @@ the matrix are in:
 - [docs/reports/capability-attribution-v1.md](docs/reports/capability-attribution-v1.md)
 - [reports/capability-attribution-v1/](reports/capability-attribution-v1/) (analysis artifacts)
 
-Headline finding: temporal/current-state correctness and principal isolation
-were largely runner-supplied for two of the three researched providers, while
-deletion was product-native for all three. Benchmark results should therefore
-carry layer attribution.
+Headline findings, stated at the precision the evidence supports:
+
+- In the tested capability-attribution experiment, benchmark-side temporal
+  eligibility filtering materially changed temporal/current-state correctness
+  for GBrain and Mem0 and eliminated observed future-information leakage.
+  This is the strongest load-bearing attribution result.
+- In the tested native views, GBrain and Hindsight returned cross-principal
+  evidence that benchmark-side principal filtering removed, while Mem0's
+  tested `user_id` configuration provided product-native principal isolation.
+  The assisted scope/principal cells also applied temporal eligibility
+  filtering, so their correctness deltas should not be attributed solely to
+  scope filtering (see [docs/scientific-audit.md](docs/scientific-audit.md)).
+
+Benchmark results should carry layer attribution.
 
 ## Lifecycle / deletion
 
@@ -198,8 +219,7 @@ no cross-provider migration was executed in this research.
 ## Research results
 
 - [docs/reports/](docs/reports/) - Task 15 review, Semantic Exit original,
-  errata, and corrected reports, GBrain supplement, publication readiness,
-  capability attribution v1, final publication decision
+  errata, and corrected reports, GBrain supplement, capability attribution v1
 - [reports/protocol-v1/](reports/protocol-v1/) - frozen V1 result tables
 - [reports/capability-attribution-v1/](reports/capability-attribution-v1/) -
   capability-attribution analysis artifacts and run manifests

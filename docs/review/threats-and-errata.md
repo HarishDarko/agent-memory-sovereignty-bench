@@ -46,6 +46,5 @@ restarted TEST run:
 - Frozen Task 15: `c3007f4`
 - `docs/reports/semantic-memory-exit-v1-errata.md`
 - `docs/reports/semantic-memory-exit-v1-corrected.md`
-- `docs/reports/publication-readiness-review.md`
 
 This experiment neither modifies nor recomputes those records.

@@ -1,6 +1,7 @@
 # GBrain Configuration Summary (Capability Attribution Ablation v1)
 
-For maintainer review before publication. Do not send without instruction.
+Provider configuration summary for maintainer verification of the claims in
+this file.
 
 ## Pinned version
 
