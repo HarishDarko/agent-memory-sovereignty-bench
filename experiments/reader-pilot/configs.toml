@@ -1,0 +1,21 @@
+# Preregistered reader-setting variants compared in the cost-gated pilot.
+# Everything else is fixed by the frozen protocol: model deepseek-v4-flash,
+# stateless single request, JSON output, token budget 2048.
+
+[settings.thinking_high]
+name = "thinking-high-temp0"
+thinking_enabled = true
+reasoning_effort = "high"
+temperature = 0.0
+
+[settings.no_thinking]
+name = "no-thinking-temp0"
+thinking_enabled = false
+reasoning_effort = "none"
+temperature = 0.0
+
+[settings.temp02]
+name = "thinking-high-temp0.2"
+thinking_enabled = true
+reasoning_effort = "high"
+temperature = 0.2

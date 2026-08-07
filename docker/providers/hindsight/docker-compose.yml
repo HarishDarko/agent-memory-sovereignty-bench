@@ -1,0 +1,67 @@
+# Hindsight provider stack (Phase 1 environment gate): API + pgvector Postgres.
+#
+# Isolation (verified 2026-08-06):
+# - both services run on an internal-only network: no external egress, only
+#   inter-service traffic (docker compose `internal: true`).
+# - the API image sovbench-hindsight:797faf7-cached bakes the local
+#   embedding/reranker model cache (BAAI/bge-small-en-v1.5 and
+#   cross-encoder/ms-marco-MiniLM-L-6-v2) so no HuggingFace access is needed;
+#   HF_HUB_OFFLINE=1 + TRANSFORMERS_OFFLINE=1 force offline mode.
+# - HINDSIGHT_API_LLM_PROVIDER=none: no LLM features in the controlled track.
+# Derivation: docker commit of the API container built from
+# docker/providers/hindsight/Dockerfile (pinned commit 797faf7) after its
+# first local model download; digest sha256:2ad9f581... recorded.
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: sovbench
+      POSTGRES_PASSWORD: sovbench
+      POSTGRES_DB: hindsight
+    volumes:
+      - hindsight-db:/var/lib/postgresql/data
+    networks:
+      - internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sovbench"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  api:
+    image: sovbench-hindsight:797faf7-cached
+    environment:
+      HINDSIGHT_API_DATABASE_URL: postgresql://sovbench:sovbench@db:5432/hindsight
+      HINDSIGHT_API_LLM_PROVIDER: ${HINDSIGHT_API_LLM_PROVIDER:-none}
+      HINDSIGHT_API_LLM_MODEL: ${HINDSIGHT_API_LLM_MODEL:-deepseek-v4-flash}
+      HINDSIGHT_API_LLM_BASE_URL: ${HINDSIGHT_API_LLM_BASE_URL:-}
+      HINDSIGHT_API_LLM_API_KEY: ${HINDSIGHT_API_LLM_API_KEY:-}
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    ports:
+      - "8000:8888"
+    networks:
+      - internal
+    depends_on:
+      db:
+        condition: service_healthy
+  # Benchmark-owned forwarding sidecar: published ports do not reach
+  # internal-network containers in this Docker version, so an alpine socat
+  # bridge forwards host:8000 -> api:8888. It is not a provider container;
+  # the provider (hindsight-api) stays on the internal network with no egress.
+  api-proxy:
+    image: alpine:3.17
+    command: ["sh", "-c", "apk add --no-cache socat >/dev/null 2>&1; socat TCP-LISTEN:8000,fork,reuseaddr TCP:api:8888 & if [ -n \"$HOST_PROXY_PORT\" ] && [ \"$HOST_PROXY_PORT\" != \"0\" ]; then socat TCP-LISTEN:9000,fork,reuseaddr TCP:host.docker.internal:$HOST_PROXY_PORT & fi; wait"]
+    environment:
+      HOST_PROXY_PORT: ${HOST_PROXY_PORT:-0}
+    ports:
+      - "8000:8000"
+    networks:
+      - default
+      - internal
+    depends_on:
+      - api
+volumes:
+  hindsight-db:
+networks:
+  internal:
+    internal: true

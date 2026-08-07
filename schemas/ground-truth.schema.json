@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sovbench.local/schemas/ground-truth/1",
+  "title": "Memory Sovereignty Benchmark private ground truth",
+  "description": "One line of ground_truth.jsonl. This schema is private-scorer only; the file must never enter provider or reader runtime.",
+  "type": "object",
+  "required": ["query_id", "answer", "abstain", "gold_event_ids", "note"],
+  "additionalProperties": false,
+  "properties": {
+    "query_id": {"type": "string", "minLength": 1},
+    "answer": {"type": ["string", "null"]},
+    "abstain": {"type": "boolean"},
+    "gold_event_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "note": {"type": "string"},
+    "answer_type": {"enum": ["exact", "set", "date", "bool", "quantity"]},
+    "acceptable_answers": {"type": "array", "items": {"type": "string"}}
+  }
+}

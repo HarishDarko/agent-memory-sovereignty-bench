@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sovbench.local/schemas/manifest/1",
+  "title": "Memory Sovereignty Benchmark run manifest",
+  "description": "Per-run artifact. References only hashes, paths, and aggregates; never contains hidden gold content or credentials.",
+  "type": "object",
+  "required": [
+    "schema",
+    "run_id",
+    "status",
+    "status_reason",
+    "track",
+    "benchmark_time",
+    "reader",
+    "memory_provider",
+    "corpus",
+    "runtime",
+    "isolation",
+    "dataset_validation",
+    "scores",
+    "scorer_version",
+    "publication",
+    "notes"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schema": {"const": "sovbench/manifest/1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "created",
+        "aborted_preflight",
+        "invalid_dataset",
+        "invalid_invariant",
+        "completed_plumbing",
+        "completed_unverified",
+        "completed_publishable"
+      ]
+    },
+    "status_reason": {"type": "string"},
+    "track": {"type": "string", "minLength": 1},
+    "benchmark_time": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "reader": {
+      "type": "object",
+      "required": [
+        "provider",
+        "requested_model",
+        "expected_release",
+        "actual_model",
+        "semantic_reader_validated",
+        "mode",
+        "prompt_version",
+        "prompt_hash",
+        "token_budget",
+        "token_estimator"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "provider": {"type": "string"},
+        "requested_model": {"type": ["string", "null"]},
+        "expected_release": {"type": ["string", "null"]},
+        "actual_model": {"type": ["string", "null"]},
+        "semantic_reader_validated": {"type": "boolean"},
+        "mode": {"enum": ["offline", "deepseek"]},
+        "prompt_version": {"type": "string"},
+        "prompt_hash": {"type": "string", "minLength": 64, "maxLength": 64},
+        "token_budget": {"type": "integer", "minimum": 1},
+        "token_estimator": {"type": "string"}
+      }
+    },
+    "memory_provider": {
+      "type": "object",
+      "required": ["name", "version", "control", "uses_ground_truth", "capabilities", "stats"],
+      "additionalProperties": true
+    },
+    "corpus": {
+      "type": "object",
+      "required": ["split", "path", "hash"],
+      "additionalProperties": true
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["python", "os", "lock_hash", "executable"],
+      "additionalProperties": true
+    },
+    "isolation": {
+      "type": "object",
+      "required": ["passed", "results"],
+      "additionalProperties": true,
+      "properties": {
+        "passed": {"type": "boolean"},
+        "results": {"type": "array"}
+      }
+    },
+    "dataset_validation": {
+      "type": "object",
+      "required": ["passed", "errors", "warnings"],
+      "additionalProperties": true,
+      "properties": {
+        "passed": {"type": "boolean"},
+        "errors": {"type": "array", "items": {"type": "string"}},
+        "warnings": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "scores": {"type": ["object", "null"]},
+    "scorer_version": {"type": "string"},
+    "publication": {
+      "type": "object",
+      "required": ["eligible", "reasons"],
+      "additionalProperties": true,
+      "properties": {
+        "eligible": {"type": "boolean"},
+        "reasons": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}

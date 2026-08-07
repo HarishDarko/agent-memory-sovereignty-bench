@@ -1,0 +1,125 @@
+{
+  "bm25-pure": {
+    "containerized": false,
+    "contract": {
+      "checks": [
+        "meta",
+        "fresh_state",
+        "dedup",
+        "ordering",
+        "readiness",
+        "raw_trace",
+        "canary_current",
+        "read_only_retrieval",
+        "snapshot_restore",
+        "canary_future",
+        "canary_cross_user",
+        "canary_authority",
+        "canary_multi_hop",
+        "canary_deleted",
+        "error_normalization",
+        "unknown_principal",
+        "export_import",
+        "restart",
+        "stats",
+        "cleanup"
+      ],
+      "passed": true
+    },
+    "meta": {
+      "adapter_version": "0.1.0",
+      "config_hash": "e045a335be84a0a81d0526e3b2bd1bd2e6c58da4781bc3957b6db4c109c99e6c",
+      "external_dependencies": [],
+      "image_digest": "n/a-local",
+      "license": "MIT",
+      "name": "bm25-pure",
+      "network_needs": [],
+      "telemetry": "none",
+      "upstream_commit": "n/a-local",
+      "upstream_version": "0.1.0 (local baseline)"
+    },
+    "name": "bm25-pure"
+  },
+  "bm25-sqlite-fts": {
+    "containerized": false,
+    "contract": {
+      "checks": [
+        "meta",
+        "fresh_state",
+        "dedup",
+        "ordering",
+        "readiness",
+        "raw_trace",
+        "canary_current",
+        "read_only_retrieval",
+        "snapshot_restore",
+        "canary_future",
+        "canary_cross_user",
+        "canary_authority",
+        "canary_multi_hop",
+        "canary_deleted",
+        "error_normalization",
+        "unknown_principal",
+        "export_import",
+        "restart",
+        "stats",
+        "cleanup"
+      ],
+      "passed": true
+    },
+    "meta": {
+      "adapter_version": "0.1.0",
+      "config_hash": "afcf2cad516ec982af6365bc35ed18cc0ef641c14d90197b062446fc50cdee36",
+      "external_dependencies": [],
+      "image_digest": "n/a-local",
+      "license": "MIT",
+      "name": "bm25-sqlite-fts",
+      "network_needs": [],
+      "telemetry": "none",
+      "upstream_commit": "n/a-local",
+      "upstream_version": "0.1.0 (local baseline)"
+    },
+    "name": "bm25-sqlite-fts"
+  },
+  "full-context": {
+    "containerized": false,
+    "contract": {
+      "checks": [
+        "meta",
+        "fresh_state",
+        "dedup",
+        "ordering",
+        "readiness",
+        "raw_trace",
+        "canary_current",
+        "read_only_retrieval",
+        "snapshot_restore",
+        "canary_future",
+        "canary_cross_user",
+        "canary_authority",
+        "canary_multi_hop",
+        "canary_deleted",
+        "error_normalization",
+        "unknown_principal",
+        "export_import",
+        "restart",
+        "stats",
+        "cleanup"
+      ],
+      "passed": true
+    },
+    "meta": {
+      "adapter_version": "0.1.0",
+      "config_hash": "b680fe1d7f0e2891eafb79ed3dba657831586a380034632e81f74c0fc2bc3768",
+      "external_dependencies": [],
+      "image_digest": "n/a-local",
+      "license": "MIT",
+      "name": "full-context",
+      "network_needs": [],
+      "telemetry": "none",
+      "upstream_commit": "n/a-local",
+      "upstream_version": "0.1.0 (local baseline)"
+    },
+    "name": "full-context"
+  }
+}

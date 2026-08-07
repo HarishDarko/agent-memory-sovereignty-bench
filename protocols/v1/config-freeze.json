@@ -1,0 +1,278 @@
+{
+  "cost": {
+    "basis": "pilot actuals 2026-08-06 (180 requests, USD 0.0258)",
+    "ceiling_usd_global": 10.0,
+    "ceiling_usd_per_run": 1.0,
+    "expected_usd": 0.0824,
+    "note": "controlled track makes no provider-native model calls; gateway ceilings fail closed",
+    "price_per_million_input": 0.14,
+    "price_per_million_output": 0.28,
+    "provider_native_model_calls_usd": 0.0,
+    "repeats": 3,
+    "requests": 576,
+    "test_queries": 192,
+    "worst_case_usd": 0.54
+  },
+  "dataset": {
+    "dev": {
+      "events": 105,
+      "queries": 80
+    },
+    "test": {
+      "packs": 3,
+      "queries_per_pack": 64,
+      "queries_total": 192
+    }
+  },
+  "dev_corpus": {
+    "errors": [],
+    "events": 105,
+    "gold_rows": 80,
+    "passed": true,
+    "queries": 80
+  },
+  "dry_run": {
+    "command": "scripts/run_phase0.py",
+    "cost_usd": 0.0,
+    "reader": "offline stub"
+  },
+  "frozen_at": "2026-08-06T09:25:10Z",
+  "git": {
+    "commit": "844cb9ccc1f8f44f1a5301ee5ed676f2972f5809",
+    "describe": "844cb9c",
+    "pending_freeze_paths": [
+      "protocols/",
+      "scripts/freeze_protocol.py"
+    ],
+    "tree_clean": true,
+    "uncommitted": [
+      "?? protocols/",
+      "?? scripts/freeze_protocol.py"
+    ]
+  },
+  "hashes": {
+    "configs": {
+      "digest": "302026c58ea44f209b7848c5aec42f966e599ceccc92c2c33b7fe63167578c2c",
+      "files": {
+        "config/default.toml": "f73e31c59b751129c3a8a62ab95f201e290bcbd1f4e9795b0b45589b99b90784",
+        "config/gateway-policy.toml": "c7af6205774c44009e5140dacb8c4aa58fd9d1873c3665fdf534237391802d15",
+        "config/providers/bm25-pure.toml": "e045a335be84a0a81d0526e3b2bd1bd2e6c58da4781bc3957b6db4c109c99e6c",
+        "config/providers/full-context.toml": "b680fe1d7f0e2891eafb79ed3dba657831586a380034632e81f74c0fc2bc3768",
+        "providers/gbrain/config.toml": "500f860108a1b11dd20ad0eb1fdcd1224b3227ee54f645575bdbbbc237f0eedb",
+        "providers/hindsight/config.toml": "63bf9c9582193d93b610edd9121240a7cb364d6a0e1a36ec6a9cd6f813b9a44f",
+        "providers/mem0/config.toml": "0a4536a2fe6b282a26631336e645e8b148dbf01b5f7403c4010777a3b439f78b",
+        "providers/optmem/config.toml": "88d25b313c1803e2fe66c3bc82cb8a034a350614068d6057e75a7a4777ccd259"
+      }
+    },
+    "dev": {
+      "digest": "825015a744031f873a3a11eac5418a5f42905023c5701185a72c485a330705d1",
+      "files": {
+        "datasets/dev/personal/dataset-card.md": "eb86435bf7763b01b9ba60958326e3b276fcf08c870373db819e1c11658d69bf",
+        "datasets/dev/personal/events.jsonl": "ff81d2e499571dd0f552d91dcac982eee435433f1c9136e9a602348137c61b7d",
+        "datasets/dev/personal/ground_truth.jsonl": "f61aba1325265432b61113485baf07e7959d9c25859b1fac0ab49c71163850d0",
+        "datasets/dev/personal/queries.jsonl": "0d5d35369a2a40176874b1e5e34d8ba9b915ff4c441b512909c632f40becd9b8"
+      }
+    },
+    "lock": {
+      "digest": "5a893c495874f55a72cb19a3417fe47d598615ddc284253fe26791752d878667",
+      "files": {
+        ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+        "pyproject.toml": "0be5b6be83914b2e0910a2748f036304d8585c84f2d3bb95e3201ea55d5d2b48",
+        "uv.lock": "2dbdda1d803d607d5bf5ddc04baa3cf3accda3fd924601586eb3ce88023c6de1"
+      }
+    },
+    "prompt": {
+      "digest": "e7d0d89c41c2b7d984e326c34facd1dd4a9e20c301be4d59dd23853ae6b3a19a",
+      "files": {
+        "prompts/reader-v1.md": "5eab2ba89728e2af16293868703b9e005be6137a43b2a4f2505bb910b3e891fa"
+      }
+    },
+    "protocol": {
+      "digest": "f809b10407348366885268f8375872da6e983696a049736f31ab02172fd65d94",
+      "files": {
+        "protocols/v1/analysis-plan.md": "c7c784573ef48ff186fb2189465edbe2d6d7d0d2aaec8a039e472e0510382b21",
+        "protocols/v1/personal-controlled.md": "ae41f38bc1d2256f80257194fa271ffea9dcd3471c19600af7553d662e54bf0d"
+      }
+    },
+    "schemas": {
+      "digest": "5c45068a9eb115309cdec4ff27360f3fb784acfffb1ffcc3f87ff89e2200a8ac",
+      "files": {
+        "schemas/event.schema.json": "a359edcf1b01f68e1723f39bf739c80ee2cb48178c40eb37cdc332fc32d80a71",
+        "schemas/ground-truth.schema.json": "543d7acc5c8db9e701c4a7a8da28ed16f1897a832555a10fff0a6df7da554ab1",
+        "schemas/manifest.schema.json": "f5e36666faca7fc224e0baef6531f33472bd66fab3ab8cff16d04ea99827b440",
+        "schemas/provider-capabilities.schema.json": "cce129eaabdadd602c7e0e3a96158b2971ed3e750f7879f87be226adab1bd082",
+        "schemas/query.schema.json": "42cc4bead2613737cb66aba3591d74f2cdee1483c4b5bff356b3a50436150e45",
+        "schemas/result-bundle.schema.json": "41ac8af038868416803a4e4b1a5b0093afc20c7c9fc8a07a4c50c45e2c02601a"
+      }
+    },
+    "scorer": {
+      "digest": "5a37d44dfe3e76de2e3d9318f1311f454e186e0318712a46f11e17f12e1f3750",
+      "files": {
+        "benchmark/metrics.py": "fe2828bdfe5c12fb37668d62097c8d7c74dd90a64483bf3f2741bab0e0320675",
+        "benchmark/scorer.py": "1f99b2b6eaf4f1d851667a0ef2248aeef1c0febceb7b22383b2300b3257c45dd",
+        "benchmark/statistics.py": "fb2699e099efc9f63e8085e6f16d8b81af3a92daee82c73ef06bc2fef5c6300a",
+        "benchmark/validation.py": "cab350cd73eca4a474f830f45fb6fdd9389a5ef75eab49b7c7f1e0fdd594d3b1"
+      }
+    }
+  },
+  "images": {
+    "optmem": {
+      "digest": "sha256:bc64d013d37586253156302df506009c099a38592f26aefa5b9e383feb825833",
+      "reference": "sovbench-optmem:1fb164c"
+    }
+  },
+  "participants": {
+    "controls": [
+      {
+        "name": "no-memory",
+        "role": "abstention control"
+      },
+      {
+        "name": "oracle",
+        "role": "retrieval integrity control"
+      },
+      {
+        "name": "random-retrieval",
+        "role": "chance-level negative control"
+      },
+      {
+        "name": "full-context",
+        "role": "no-retrieval cost control"
+      },
+      {
+        "name": "bm25-pure",
+        "role": "lexical baseline"
+      },
+      {
+        "name": "bm25-sqlite-fts",
+        "role": "lexical baseline"
+      }
+    ],
+    "providers": [
+      {
+        "license": "none-present (all rights reserved; gitignored local install)",
+        "name": "optmem",
+        "network_needs": [],
+        "notes": "append-only upstream: deletion-persistence outcome is unsupported; recorded, not simulated",
+        "telemetry": "none",
+        "upstream": "https://github.com/VictorTaelin/OptMem",
+        "upstream_commit": "1fb164cf39028047781f72ac3bb1e5a691c1dcb0",
+        "upstream_version": "0.1.0 (pinned script)"
+      },
+      {
+        "license": "MIT",
+        "name": "gbrain",
+        "network_needs": [],
+        "notes": "controlled config init --pglite --no-embedding: keyword/hybrid only, no external keys",
+        "telemetry": "none",
+        "upstream": "https://github.com/garrytan/gbrain",
+        "upstream_commit": "15b9863d13635d173562a54f55a1d388bfcf546b",
+        "upstream_version": "0.42.73.2"
+      },
+      {
+        "license": "Apache-2.0",
+        "name": "mem0",
+        "network_needs": [],
+        "notes": "add(infer=False), local chroma + fastembed BAAI/bge-small-en-v1.5; semantic-only retrieval",
+        "telemetry": "disabled (MEM0_TELEMETRY=false set before import; runtime denial verified)",
+        "upstream": "https://github.com/mem0ai/mem0",
+        "upstream_commit": "3f39fba28f7781aaf581f64a4af39d017af65835",
+        "upstream_version": "2.0.17"
+      },
+      {
+        "license": "MIT",
+        "name": "hindsight",
+        "network_needs": [],
+        "notes": "LLM-gated reflection/consolidation stay OFF in the controlled config; live verification is gated on the Phase 1 environment (Postgres+pgvector)",
+        "telemetry": "none observed (opentelemetry metrics only)",
+        "upstream": "https://github.com/vectorize-io/hindsight",
+        "upstream_commit": "797faf7981ce9332e2ce7c922471b72b506b4065",
+        "upstream_version": "0.8.6"
+      }
+    ],
+    "registrations": {
+      "controls_not_registered": [
+        "no-memory",
+        "oracle",
+        "random-retrieval"
+      ],
+      "registry.json_baselines": [
+        "bm25-pure",
+        "bm25-sqlite-fts",
+        "full-context"
+      ]
+    }
+  },
+  "primary_outcomes": [
+    "complete_chain_at_5",
+    "typed_answer_correctness",
+    "calibrated_abstention",
+    "cross_principal_leakage",
+    "deletion_persistence",
+    "export_round_trip_fidelity"
+  ],
+  "prompt_file_sha256": "5eab2ba89728e2af16293868703b9e005be6137a43b2a4f2505bb910b3e891fa",
+  "protocol_version": "v1",
+  "reader": {
+    "attestation_mode": "rolling",
+    "clock_start": "2026-08-01T00:00:00Z",
+    "expected_release": "DeepSeek-V4-Flash-0731",
+    "model": "deepseek-v4-flash",
+    "prompt_version": "v1",
+    "reasoning_effort": "none",
+    "repeats": 3,
+    "temperature": 0.0,
+    "thinking_enabled": false,
+    "token_budget": 2048
+  },
+  "reader_prompt_hash": "c2ff3f4eb7cb193a2d6151d1998d3cd2fc955c6195891c35dc089a13d7ac47d2",
+  "schema": "sovbench/protocol-freeze/1",
+  "tag": "protocol-v1-freeze",
+  "test_commitment": {
+    "commitment_path": "datasets/commitments/test-v1.json",
+    "commitment_sha256": "460598a95ca9567fa392dc287cc63e859494586f060d69ea22179cfeb2119a5d",
+    "errors": [],
+    "packs": {
+      "pack-1": {
+        "aggregate": "sha256:cc9516e30d64f0edac8439fdffd01bb4f50dcfdd2d8873702e3fe8d3935a3c0f",
+        "errors": [],
+        "queries": 64,
+        "verified": true
+      },
+      "pack-2": {
+        "aggregate": "sha256:1d529484013ece3e9fa642f71c6fff0328ddd196430cb0dfb6ef5d6312bf0a17",
+        "errors": [],
+        "queries": 64,
+        "verified": true
+      },
+      "pack-3": {
+        "aggregate": "sha256:59d3ee4f7e032de9c072562481be806eb2353c222bb10eec470d60dc69ea7597",
+        "errors": [],
+        "queries": 64,
+        "verified": true
+      }
+    },
+    "packs_present": true,
+    "verified": true
+  },
+  "thresholds": {
+    "alpha": 0.05,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260805,
+    "export_parity_min_dev": 0.98,
+    "leakage_required_zero": [
+      "cross_principal_evidence_total",
+      "deleted_evidence_total"
+    ],
+    "mcnemar_min_discordant_pairs": 5,
+    "no_memory_abstain_accuracy_required": 1.0,
+    "oracle_reader_accuracy_required": 0.95,
+    "oracle_recall_at_5_required": 1.0,
+    "practical_delta_min": 0.05,
+    "random_recall_at_5_band": [
+      0.0,
+      0.25
+    ]
+  },
+  "track": "controlled"
+}

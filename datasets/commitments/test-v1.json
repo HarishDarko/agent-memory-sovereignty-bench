@@ -1,0 +1,104 @@
+{
+  "packs": {
+    "pack-1": {
+      "aggregate": "sha256:cc9516e30d64f0edac8439fdffd01bb4f50dcfdd2d8873702e3fe8d3935a3c0f",
+      "files": {
+        "events.jsonl": "sha256:fec890fb9979a2ae8d6728d357b941f317229fddef2d9ab4663e331f60b5f4aa",
+        "ground_truth.jsonl": "sha256:c7c686fd67dc151ac5c077c075871d00709a93d28bbfede5193ad75e577a72e8",
+        "queries.jsonl": "sha256:7f2ce3918d47b9614d6d69046983debc83c0d89ef092a8d8b55553943fc9c0b8"
+      },
+      "pack": "pack-1",
+      "summary": {
+        "events": 88,
+        "ground_truth_rows": 64,
+        "kinds": {
+          "abstention": 5,
+          "authority_conflict": 1,
+          "changed_preference": 8,
+          "cross_user": 1,
+          "current_state": 8,
+          "deletion": 1,
+          "do_not_store": 1,
+          "expiry": 8,
+          "historical": 8,
+          "migration": 1,
+          "multi_hop": 1,
+          "poisoning": 1,
+          "provenance": 1,
+          "recovery": 1,
+          "role_group": 2,
+          "supersession": 8,
+          "temporary_validity": 8
+        },
+        "queries": 64
+      }
+    },
+    "pack-2": {
+      "aggregate": "sha256:1d529484013ece3e9fa642f71c6fff0328ddd196430cb0dfb6ef5d6312bf0a17",
+      "files": {
+        "events.jsonl": "sha256:e178349855658437357c061b4fc0d8ec34c9f36161c376e450b935d9216fcfc4",
+        "ground_truth.jsonl": "sha256:7f2c2f80fd53c3cd827dccf76ca873a3377bed2da5a9fc1d7d6876522219f7b1",
+        "queries.jsonl": "sha256:20ed392f3af55e8ba1049a9118da5e44d58603501f50124a522a2b55f367686a"
+      },
+      "pack": "pack-2",
+      "summary": {
+        "events": 88,
+        "ground_truth_rows": 64,
+        "kinds": {
+          "abstention": 5,
+          "authority_conflict": 1,
+          "changed_preference": 8,
+          "cross_user": 1,
+          "current_state": 8,
+          "deletion": 1,
+          "do_not_store": 1,
+          "expiry": 8,
+          "historical": 8,
+          "migration": 1,
+          "multi_hop": 1,
+          "poisoning": 1,
+          "provenance": 1,
+          "recovery": 1,
+          "role_group": 2,
+          "supersession": 8,
+          "temporary_validity": 8
+        },
+        "queries": 64
+      }
+    },
+    "pack-3": {
+      "aggregate": "sha256:59d3ee4f7e032de9c072562481be806eb2353c222bb10eec470d60dc69ea7597",
+      "files": {
+        "events.jsonl": "sha256:dedcde90d1a5274994e5e12b799c9d54ff489801c4f144684237a1e29828926c",
+        "ground_truth.jsonl": "sha256:c435820ff851c0f87c31610f20980e85c82e59d0fe530882b7ec4623127bbf73",
+        "queries.jsonl": "sha256:e0a2adc6777f6871d4d7172145d59cf2f2128d6097a3fbe72630493b760ee19b"
+      },
+      "pack": "pack-3",
+      "summary": {
+        "events": 88,
+        "ground_truth_rows": 64,
+        "kinds": {
+          "abstention": 5,
+          "authority_conflict": 1,
+          "changed_preference": 8,
+          "cross_user": 1,
+          "current_state": 8,
+          "deletion": 1,
+          "do_not_store": 1,
+          "expiry": 8,
+          "historical": 8,
+          "migration": 1,
+          "multi_hop": 1,
+          "poisoning": 1,
+          "provenance": 1,
+          "recovery": 1,
+          "role_group": 2,
+          "supersession": 8,
+          "temporary_validity": 8
+        },
+        "queries": 64
+      }
+    }
+  },
+  "schema": "sovbench/commitment/1"
+}

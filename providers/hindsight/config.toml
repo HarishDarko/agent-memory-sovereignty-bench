@@ -1,0 +1,18 @@
+[provider]
+name = "hindsight"
+adapter_version = "0.1.0"
+upstream_version = "0.8.6"
+upstream_commit = "797faf7981ce9332e2ce7c922471b72b506b4065"
+image_digest = "n/a-local"
+license = "MIT"
+telemetry = "none"
+external_dependencies = ["hindsight-api server (pinned commit)", "PostgreSQL + pgvector"]
+network_needs = []
+
+# Controlled configuration:
+#   - no LLM features (reflection/consolidation OFF) until the Task 13 cost
+#     gate approves gateway-routed model calls
+#   - local sentence-transformers embeddings/rerankers (offline) at the
+#     Phase 1 environment gate
+#   - one bank per provider data dir; the adapter performs as-of/principal/
+#     scope filtering after recall

@@ -1,0 +1,35 @@
+# Memory Sovereignty Benchmark - default configuration.
+# Environment variables override these values (see benchmark/config.py).
+# During Phase 0 the gateway stays in "offline" mode: deterministic stub, effectively $0.
+
+[gateway]
+mode = "offline"              # offline | deepseek
+model = "deepseek-v4-flash"
+model_release = "DeepSeek-V4-Flash-0731"   # expected dated release; verify returned model at run time
+base_url = "https://api.deepseek.com"      # official endpoint, only used in deepseek mode
+gateway_url = ""                           # local policy-gated proxy URL; empty = direct API access
+api_key = ""                 # never commit a real key; use SOVBENCH_DEEPSEEK_API_KEY
+max_retries = 2
+temperature = 0.0
+thinking_enabled = false          # frozen by the reader-protocol pilot (2026-08-06): no-thinking-temp0
+reasoning_effort = "none"         # inert while thinking is disabled; recorded for completeness
+attestation_mode = "rolling"   # "rolling" labels results; "strict" requires the returned model to evidence the release
+identity_run_id = ""           # identity headers sent to the gateway proxy when gateway_url is set
+identity_provider_id = ""
+timeout_s = 60.0
+
+[reader]
+prompt_path = "prompts/reader-v1.md"
+prompt_version = "v1"
+token_budget = 2048
+
+[benchmark]
+track = "controlled"
+clock_start = "2026-08-01T00:00:00Z"   # deterministic benchmark clock, never wall-clock "today"
+
+[paths]
+corpus_dir = "datasets/dev/personal"
+gold_path = "datasets/dev/personal/ground_truth.jsonl"
+run_root = "runs"
+report_root = "reports"
+docker_compose = "docker/compose.yml"

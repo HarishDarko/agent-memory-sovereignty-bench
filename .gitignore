@@ -1,0 +1,40 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.uv/
+*.egg-info/
+dist/
+build/
+
+# Run artifacts (kept out of git; see runs/.gitkeep)
+runs/*
+!runs/.gitkeep
+
+# Reports
+reports/*
+!reports/.gitkeep
+!reports/protocol-v1/
+!reports/protocol-v1/*
+
+# Private scorer state (hidden test gold lives here; released only after results are frozen)
+scorer_private/*
+!scorer_private/README.md
+
+# Private/hidden test split (not committed until released)
+datasets/private_test/*
+!datasets/private_test/README.md
+
+# Logs and local scratch
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Pinned local OptMem install (upstream has no license file; never committed)
+.optmem/
+
+# Secrets must never be committed
+*.env
+.env

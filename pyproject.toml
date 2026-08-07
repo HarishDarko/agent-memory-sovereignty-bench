@@ -1,0 +1,18 @@
+[project]
+name = "memory-sovereignty-bench"
+version = "0.1.0"
+description = "Controlled, isolated benchmark of AI memory systems. Phase 0: harness + baselines (no-memory, oracle, BM25/SQLite FTS)."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+gateway = ["httpx>=0.27"]   # only needed when the real DeepSeek gateway mode is enabled
+dev = ["pytest>=8"]         # optional; Phase 0 tests run on stdlib unittest
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

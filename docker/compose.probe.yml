@@ -1,0 +1,13 @@
+# Clean-room runtime probe overlay. Exercises the isolation contract with
+# locally cached images (no downloads). Every compose invocation for the
+# benchmark uses a unique project name: docker compose -p sovbench-<run> ...
+services:
+  gateway:
+    image: alpine:3.17
+    command: ["sh", "-c", "while true; do { printf 'HTTP/1.1 200 OK\\r\\nContent-Length: 2\\r\\n\\r\\nOK'; } | nc -l -p 8000; done"]
+    read_only: true
+    tmpfs: [/tmp]
+  provider:
+    image: alpine:3.17
+    command: ["sh", "-c", "sleep infinity"]
+    user: "65532:65532"

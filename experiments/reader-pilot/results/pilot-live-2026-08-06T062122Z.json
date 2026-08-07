@@ -1,0 +1,62 @@
+{
+  "budget": 2048,
+  "configs": [
+    {
+      "abstain_correct": 1.0,
+      "errors": [],
+      "evidence_id_valid": 0.95,
+      "json_valid": 1.0,
+      "mean_latency_ms": 4286.77,
+      "mean_tokens": 849.1,
+      "name": "thinking-high-temp0",
+      "nondeterministic": false,
+      "oracle_correct": 1.0,
+      "total_tokens": 50944
+    },
+    {
+      "abstain_correct": 1.0,
+      "errors": [],
+      "evidence_id_valid": 0.95,
+      "json_valid": 1.0,
+      "mean_latency_ms": 3037.73,
+      "mean_tokens": 737.1,
+      "name": "no-thinking-temp0",
+      "nondeterministic": false,
+      "oracle_correct": 1.0,
+      "total_tokens": 44226
+    },
+    {
+      "abstain_correct": 1.0,
+      "errors": [],
+      "evidence_id_valid": 0.95,
+      "json_valid": 1.0,
+      "mean_latency_ms": 3024.08,
+      "mean_tokens": 756.6,
+      "name": "thinking-high-temp0.2",
+      "nondeterministic": false,
+      "oracle_correct": 1.0,
+      "total_tokens": 45399
+    }
+  ],
+  "cost_estimate": {
+    "input_tokens": 82962,
+    "max_cost_usd": 0.2871,
+    "output_tokens": 984000,
+    "price_per_million_input": 0.14,
+    "price_per_million_output": 0.28,
+    "requests": 180
+  },
+  "generated_at": "2026-08-06T06:21:22Z",
+  "mode": "live",
+  "nondeterminism": {
+    "detected": false,
+    "recommended_repeats": 3
+  },
+  "prompt_hash": "5eab2ba89728e2af16293868703b9e005be6137a43b2a4f2505bb910b3e891fa",
+  "prompt_version": "v1",
+  "repeats": 3,
+  "selection": {
+    "name": "no-thinking-temp0",
+    "reason": "selected by preregistered hierarchy: json_valid, oracle_correct, abstain_correct, evidence_id_valid, mean_tokens"
+  }
+}

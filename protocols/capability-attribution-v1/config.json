@@ -1,0 +1,42 @@
+{
+  "schema": "sovbench/capability-attribution/1",
+  "parent_commit": "cdbd714e7bf8162789aa7020558917fe959d7dd7",
+  "providers": {
+    "gbrain": "15b9863d13635d173562a54f55a1d388bfcf546b",
+    "mem0": "3f39fba28f7781aaf581f64a4af39d017af65835",
+    "hindsight": "797faf7981ce9332e2ce7c922471b72b506b4065"
+  },
+  "reader": {
+    "model": "deepseek-v4-flash",
+    "temperature": 0.0,
+    "evidence_tokens": 2048,
+    "replicates": 3,
+    "max_retries": 2,
+    "governance_prompt_sha256": "5eab2ba89728e2af16293868703b9e005be6137a43b2a4f2505bb910b3e891fa",
+    "neutral_prompt_sha256": "8fa90804ccbe74a77228646a748829a392b8140d451b17785451551d8cf817fe"
+  },
+  "packs": ["pack-1", "pack-2", "pack-3"],
+  "query_suffixes": {
+    "authority": ["0050", "0051"],
+    "provenance": ["0056"],
+    "temporal": ["0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "0010", "0011", "0012"],
+    "scope": ["0054", "0055", "0059"],
+    "deletion": ["0052", "0053"]
+  },
+  "provider_property_matrix": {
+    "authority": ["gbrain", "mem0", "hindsight"],
+    "provenance": ["gbrain", "mem0", "hindsight"],
+    "temporal": ["gbrain", "mem0"],
+    "scope": ["gbrain", "mem0", "hindsight"],
+    "deletion_descriptive": ["gbrain", "mem0", "hindsight"]
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260805,
+    "alpha": 0.05,
+    "minimum_absolute_delta": 0.05,
+    "minimum_discordant_pairs": 5,
+    "holm_within_property_family": true
+  },
+  "cost_ceiling_usd": 2.0
+}

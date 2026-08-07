@@ -1,0 +1,5 @@
+[provider]
+name = "full-context"
+version = "0.1.0"
+# Deterministic "no retrieval" ordering: newest first, then event id.
+ordering = "recency"

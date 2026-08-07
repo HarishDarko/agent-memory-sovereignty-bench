@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sovbench.local/schemas/event/1",
+  "title": "Memory Sovereignty Benchmark source event",
+  "description": "One line of events.jsonl. Provider-visible records contain no gold answers or expected evidence IDs.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "available_at",
+    "principal",
+    "scope",
+    "authority",
+    "source",
+    "text",
+    "kind",
+    "operation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "available_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "principal": {"type": "string", "minLength": 1},
+    "subject": {"type": ["string", "null"]},
+    "scope": {"type": "string"},
+    "authority": {"type": "string"},
+    "source": {"type": "string"},
+    "text": {"type": "string"},
+    "kind": {"type": "string"},
+    "supersedes": {"type": ["string", "null"]},
+    "valid_from": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "valid_to": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "operation": {"type": "string", "enum": ["upsert", "delete"]},
+    "target_event_id": {"type": ["string", "null"]}
+  }
+}

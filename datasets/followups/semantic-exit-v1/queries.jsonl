@@ -1,0 +1,10 @@
+{"as_of":"2026-02-05T12:00:00Z","kind":"current_preference","principal":"alice","query_id":"exit_query_001","question":"What editor does Alice currently prefer for small scripts?","scope":"personal","subject":"alice"}
+{"as_of":"2026-01-20T12:00:00Z","kind":"historical_preference","principal":"alice","query_id":"exit_query_002","question":"Which editor did Alice prefer before February 2026?","scope":"personal","subject":"alice"}
+{"as_of":"2026-02-05T12:00:00Z","kind":"correction","principal":"alice","query_id":"exit_query_003","question":"What is Alice's corrected delivery address?","scope":"personal","subject":"alice"}
+{"as_of":"2026-01-21T12:00:00Z","kind":"expiry","principal":"alice","query_id":"exit_query_004","question":"Is Alice still staying at Harbor House on January 21?","scope":"personal","subject":"alice"}
+{"as_of":"2026-02-18T12:00:00Z","kind":"authority_conflict","principal":"alice","query_id":"exit_query_005","question":"Which deployment command is approved by the authoritative release policy?","scope":"shared","subject":"deployment"}
+{"as_of":"2026-02-18T12:00:00Z","kind":"private_scope","principal":"alice","query_id":"exit_query_006","question":"What is Bob's private recovery phrase hint?","scope":"personal","subject":"bob"}
+{"as_of":"2026-02-19T12:00:00Z","kind":"deletion","principal":"alice","query_id":"exit_query_007","question":"What did the deleted untrusted deployment note say?","scope":"personal","subject":"deployment"}
+{"as_of":"2026-02-24T12:00:00Z","kind":"provenance","principal":"alice","query_id":"exit_query_008","question":"What source chain supports the approved deployment command?","scope":"shared","subject":"deployment"}
+{"as_of":"2026-02-25T12:00:00Z","kind":"principal_correction","principal":"bob","query_id":"exit_query_009","question":"What is Bob's corrected recovery phrase hint?","scope":"personal","subject":"bob"}
+{"as_of":"2026-02-26T12:00:00Z","kind":"model_derived_erasure","principal":"alice","query_id":"exit_query_010","question":"Was the assistant-inferred release-preparation preference explicitly stated by Alice?","scope":"personal","subject":"alice"}

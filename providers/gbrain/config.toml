@@ -1,0 +1,21 @@
+[provider]
+name = "gbrain"
+adapter_version = "0.1.0"
+upstream_version = "0.42.73.2"
+upstream_commit = "15b9863d13635d173562a54f55a1d388bfcf546b"
+image_digest = "n/a-local"
+license = "MIT"
+telemetry = "none"
+external_dependencies = ["bun", "gbrain CLI (pinned commit)"]
+network_needs = []
+
+# Controlled configuration (selected on DEV only):
+#   - PGLite embedded engine (no server)
+#   - init --no-embedding: GBrain's default init REQUIRES an embedding
+#     provider (openai/zeroentropy/voyage); the controlled configuration
+#     deliberately declines, so retrieval is keyword-based with no external
+#     LLM/embedding keys or calls
+#   - keyword/hybrid search with LLM knobs (expansion, reranker) disabled;
+#     no external LLM or embedding provider is configured
+#   - markdown + frontmatter is the system of record; the PGLite DB is a
+#     rebuildable derived index and both hashes are recorded in snapshots

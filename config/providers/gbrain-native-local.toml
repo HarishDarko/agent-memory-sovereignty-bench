@@ -1,0 +1,12 @@
+[provider]
+name = "gbrain"
+adapter = "providers.gbrain.local_ollama.GBrainOllamaProvider"
+adapter_version = "post-freeze-0.1.0"
+upstream_version = "0.42.73.2"
+upstream_commit = "15b9863d13635d173562a54f55a1d388bfcf546b"
+embedding_provider = "ollama"
+embedding_model = "snowflake-arctic-embed:335m"
+embedding_dimensions = 1024
+ollama_base_url = "http://127.0.0.1:4713/v1"
+reader_model = "deepseek-v4-flash"
+track_label = "POST-FREEZE SUPPLEMENTARY GBRAIN-NATIVE LOCAL-EMBEDDING RUN"

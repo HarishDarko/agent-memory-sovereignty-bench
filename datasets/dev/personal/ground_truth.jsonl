@@ -1,0 +1,80 @@
+{"abstain": false, "answer": "Nimbus", "gold_event_ids": ["dev_event_0004"], "note": "current d1", "query_id": "dev_query_0001"}
+{"abstain": false, "answer": "Cordova", "gold_event_ids": ["dev_event_0001"], "note": "historical d1", "query_id": "dev_query_0002"}
+{"abstain": false, "answer": "Nimbus", "gold_event_ids": ["dev_event_0004"], "note": "superseded d1", "query_id": "dev_query_0003"}
+{"abstain": false, "answer": "Helios", "gold_event_ids": ["dev_event_0002"], "note": "changed d1", "query_id": "dev_query_0004"}
+{"abstain": false, "answer": "Vellum", "gold_event_ids": ["dev_event_0006"], "note": "current d2", "query_id": "dev_query_0005"}
+{"abstain": false, "answer": "Quill", "gold_event_ids": ["dev_event_0007"], "note": "planned d2", "query_id": "dev_query_0006"}
+{"abstain": false, "answer": "Ledgerleaf", "gold_event_ids": ["dev_event_0008"], "note": "d3 trial expired", "query_id": "dev_query_0007"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0004"], "note": "provenance source", "query_id": "dev_query_0008"}
+{"abstain": false, "answer": "Osmanthus", "gold_event_ids": ["dev_event_0013"], "note": "current d1", "query_id": "dev_query_0009"}
+{"abstain": false, "answer": "Sable", "gold_event_ids": ["dev_event_0010"], "note": "historical d1", "query_id": "dev_query_0010"}
+{"abstain": false, "answer": "Osmanthus", "gold_event_ids": ["dev_event_0013"], "note": "superseded d1", "query_id": "dev_query_0011"}
+{"abstain": false, "answer": "Cinder", "gold_event_ids": ["dev_event_0011"], "note": "changed d1", "query_id": "dev_query_0012"}
+{"abstain": false, "answer": "Tempo", "gold_event_ids": ["dev_event_0015"], "note": "current d2", "query_id": "dev_query_0013"}
+{"abstain": false, "answer": "Harmonia", "gold_event_ids": ["dev_event_0016"], "note": "planned d2", "query_id": "dev_query_0014"}
+{"abstain": false, "answer": "Lumina", "gold_event_ids": ["dev_event_0017"], "note": "d3 trial expired", "query_id": "dev_query_0015"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0013"], "note": "provenance source", "query_id": "dev_query_0016"}
+{"abstain": false, "answer": "Monkbean", "gold_event_ids": ["dev_event_0022"], "note": "current d1", "query_id": "dev_query_0017"}
+{"abstain": false, "answer": "Ember", "gold_event_ids": ["dev_event_0019"], "note": "historical d1", "query_id": "dev_query_0018"}
+{"abstain": false, "answer": "Monkbean", "gold_event_ids": ["dev_event_0022"], "note": "superseded d1", "query_id": "dev_query_0019"}
+{"abstain": false, "answer": "Aldercup", "gold_event_ids": ["dev_event_0020"], "note": "changed d1", "query_id": "dev_query_0020"}
+{"abstain": false, "answer": "Lumina", "gold_event_ids": ["dev_event_0024"], "note": "current d2", "query_id": "dev_query_0021"}
+{"abstain": false, "answer": "Kestrel", "gold_event_ids": ["dev_event_0025"], "note": "planned d2", "query_id": "dev_query_0022"}
+{"abstain": false, "answer": "Ledgerleaf", "gold_event_ids": ["dev_event_0026"], "note": "d3 trial expired", "query_id": "dev_query_0023"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0022"], "note": "provenance source", "query_id": "dev_query_0024"}
+{"abstain": false, "answer": "Vellum", "gold_event_ids": ["dev_event_0031"], "note": "current d1", "query_id": "dev_query_0025"}
+{"abstain": false, "answer": "Quill", "gold_event_ids": ["dev_event_0028"], "note": "historical d1", "query_id": "dev_query_0026"}
+{"abstain": false, "answer": "Vellum", "gold_event_ids": ["dev_event_0031"], "note": "superseded d1", "query_id": "dev_query_0027"}
+{"abstain": false, "answer": "Slate", "gold_event_ids": ["dev_event_0029"], "note": "changed d1", "query_id": "dev_query_0028"}
+{"abstain": false, "answer": "Ironpeak", "gold_event_ids": ["dev_event_0033"], "note": "current d2", "query_id": "dev_query_0029"}
+{"abstain": false, "answer": "Foundry", "gold_event_ids": ["dev_event_0034"], "note": "planned d2", "query_id": "dev_query_0030"}
+{"abstain": false, "answer": "Ledgerleaf", "gold_event_ids": ["dev_event_0035"], "note": "d3 trial expired", "query_id": "dev_query_0031"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0031"], "note": "provenance source", "query_id": "dev_query_0032"}
+{"abstain": false, "answer": "Ironpeak", "gold_event_ids": ["dev_event_0040"], "note": "current d1", "query_id": "dev_query_0033"}
+{"abstain": false, "answer": "Summit", "gold_event_ids": ["dev_event_0037"], "note": "historical d1", "query_id": "dev_query_0034"}
+{"abstain": false, "answer": "Ironpeak", "gold_event_ids": ["dev_event_0040"], "note": "superseded d1", "query_id": "dev_query_0035"}
+{"abstain": false, "answer": "Foundry", "gold_event_ids": ["dev_event_0038"], "note": "changed d1", "query_id": "dev_query_0036"}
+{"abstain": false, "answer": "Osmanthus", "gold_event_ids": ["dev_event_0042"], "note": "current d2", "query_id": "dev_query_0037"}
+{"abstain": false, "answer": "Cinder", "gold_event_ids": ["dev_event_0043"], "note": "planned d2", "query_id": "dev_query_0038"}
+{"abstain": false, "answer": "Quill", "gold_event_ids": ["dev_event_0044"], "note": "d3 trial expired", "query_id": "dev_query_0039"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0040"], "note": "provenance source", "query_id": "dev_query_0040"}
+{"abstain": false, "answer": "Glyph", "gold_event_ids": ["dev_event_0049"], "note": "current d1", "query_id": "dev_query_0041"}
+{"abstain": false, "answer": "Slate", "gold_event_ids": ["dev_event_0046"], "note": "historical d1", "query_id": "dev_query_0042"}
+{"abstain": false, "answer": "Glyph", "gold_event_ids": ["dev_event_0049"], "note": "superseded d1", "query_id": "dev_query_0043"}
+{"abstain": false, "answer": "Vellum", "gold_event_ids": ["dev_event_0047"], "note": "changed d1", "query_id": "dev_query_0044"}
+{"abstain": false, "answer": "Nimbus", "gold_event_ids": ["dev_event_0051"], "note": "current d2", "query_id": "dev_query_0045"}
+{"abstain": false, "answer": "Cordova", "gold_event_ids": ["dev_event_0052"], "note": "planned d2", "query_id": "dev_query_0046"}
+{"abstain": false, "answer": "Ledgerleaf", "gold_event_ids": ["dev_event_0053"], "note": "d3 trial expired", "query_id": "dev_query_0047"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0049"], "note": "provenance source", "query_id": "dev_query_0048"}
+{"abstain": false, "answer": "Sable", "gold_event_ids": ["dev_event_0058"], "note": "current d1", "query_id": "dev_query_0049"}
+{"abstain": false, "answer": "Cinder", "gold_event_ids": ["dev_event_0055"], "note": "historical d1", "query_id": "dev_query_0050"}
+{"abstain": false, "answer": "Sable", "gold_event_ids": ["dev_event_0058"], "note": "superseded d1", "query_id": "dev_query_0051"}
+{"abstain": false, "answer": "Osmanthus", "gold_event_ids": ["dev_event_0056"], "note": "changed d1", "query_id": "dev_query_0052"}
+{"abstain": false, "answer": "Cordova", "gold_event_ids": ["dev_event_0060"], "note": "current d2", "query_id": "dev_query_0053"}
+{"abstain": false, "answer": "Helios", "gold_event_ids": ["dev_event_0061"], "note": "planned d2", "query_id": "dev_query_0054"}
+{"abstain": false, "answer": "Summit", "gold_event_ids": ["dev_event_0062"], "note": "d3 trial expired", "query_id": "dev_query_0055"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0058"], "note": "provenance source", "query_id": "dev_query_0056"}
+{"abstain": false, "answer": "Foundry", "gold_event_ids": ["dev_event_0067"], "note": "current d1", "query_id": "dev_query_0057"}
+{"abstain": false, "answer": "Summit", "gold_event_ids": ["dev_event_0064"], "note": "historical d1", "query_id": "dev_query_0058"}
+{"abstain": false, "answer": "Foundry", "gold_event_ids": ["dev_event_0067"], "note": "superseded d1", "query_id": "dev_query_0059"}
+{"abstain": false, "answer": "Ironpeak", "gold_event_ids": ["dev_event_0065"], "note": "changed d1", "query_id": "dev_query_0060"}
+{"abstain": false, "answer": "Fortra", "gold_event_ids": ["dev_event_0069"], "note": "current d2", "query_id": "dev_query_0061"}
+{"abstain": false, "answer": "Kestrel", "gold_event_ids": ["dev_event_0070"], "note": "planned d2", "query_id": "dev_query_0062"}
+{"abstain": false, "answer": "Steno", "gold_event_ids": ["dev_event_0071"], "note": "d3 trial expired", "query_id": "dev_query_0063"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0067"], "note": "provenance source", "query_id": "dev_query_0064"}
+{"abstain": false, "answer": "Sable", "gold_event_ids": ["dev_event_0073", "dev_event_0058"], "note": "roommate multi-hop", "query_id": "dev_query_0065"}
+{"abstain": false, "answer": "Nimbus", "gold_event_ids": ["dev_event_0004"], "note": "authority: user wins", "query_id": "dev_query_0066"}
+{"abstain": false, "answer": "Osmanthus", "gold_event_ids": ["dev_event_0013"], "note": "authority: user wins", "query_id": "dev_query_0067"}
+{"abstain": false, "answer": "Vellum", "gold_event_ids": ["dev_event_0031"], "note": "poisoned claim rejected", "query_id": "dev_query_0068"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "deletion compliance", "query_id": "dev_query_0069"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "do-not-store compliance", "query_id": "dev_query_0070"}
+{"abstain": false, "answer": "Tuesday deployments", "gold_event_ids": ["dev_event_0081"], "note": "member requester", "query_id": "dev_query_0071"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "non-member requester must abstain", "query_id": "dev_query_0072"}
+{"abstain": false, "answer": "user", "gold_event_ids": ["dev_event_0067"], "note": "provenance source", "query_id": "dev_query_0073"}
+{"abstain": false, "answer": "Ironpeak", "gold_event_ids": ["dev_event_0040"], "note": "recovery state", "query_id": "dev_query_0074"}
+{"abstain": false, "answer": "Glyph", "gold_event_ids": ["dev_event_0049"], "note": "migration state", "query_id": "dev_query_0075"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "user_002 must not see person_05", "query_id": "dev_query_0076"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "user_003 must not see person_05", "query_id": "dev_query_0077"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "synthetic secret: not in corpus", "query_id": "dev_query_0078"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "synthetic secret: not in corpus", "query_id": "dev_query_0079"}
+{"abstain": true, "answer": null, "gold_event_ids": [], "note": "synthetic secret: not in corpus", "query_id": "dev_query_0080"}

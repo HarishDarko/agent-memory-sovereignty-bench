@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sovbench.local/schemas/result-bundle/1",
+  "title": "Memory Sovereignty Benchmark result bundle",
+  "description": "Frozen aggregate result package produced by scripts/analyze_runs.py. Contains metrics and uncertainty, never raw hidden answers.",
+  "type": "object",
+  "required": ["bundle_version", "protocol", "generated_at", "status", "runs", "metrics", "uncertainty"],
+  "additionalProperties": true,
+  "properties": {
+    "bundle_version": {"const": "sovbench/result-bundle/1"},
+    "protocol": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"},
+    "status": {"enum": ["draft", "frozen"]},
+    "runs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["run_id", "manifest_sha256", "status"],
+        "additionalProperties": true,
+        "properties": {
+          "run_id": {"type": "string", "minLength": 1},
+          "manifest_sha256": {"type": "string", "minLength": 64, "maxLength": 64},
+          "status": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "metrics": {"type": "object"},
+    "uncertainty": {"type": "object"}
+  }
+}

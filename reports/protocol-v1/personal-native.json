@@ -1,0 +1,582 @@
+{
+  "attempts_accounting": {
+    "gbrain": {
+      "attributed_to_recorded_failures": 0,
+      "executed": 0,
+      "failed_reader_attempts": 0,
+      "planned": 576
+    },
+    "hindsight": {
+      "attributed_to_recorded_failures": 0,
+      "executed": 576,
+      "failed_reader_attempts": 2,
+      "planned": 576
+    },
+    "mem0": {
+      "attributed_to_recorded_failures": 0,
+      "executed": 576,
+      "failed_reader_attempts": 2,
+      "planned": 576
+    },
+    "optmem": {
+      "attributed_to_recorded_failures": 0,
+      "executed": 0,
+      "failed_reader_attempts": 0,
+      "planned": 576
+    }
+  },
+  "comparisons": [
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "chain_complete@5",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "chain_complete@5",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 9,
+      "ci_high": -0.005376,
+      "ci_low": -0.108974,
+      "discordant_pairs": 17,
+      "family": "retrieval",
+      "label": "resolved",
+      "metric": "chain_complete@5",
+      "observed_mean_diff": -0.054545,
+      "p_value": 0.049042,
+      "p_value_holm": 0.049042,
+      "reason": "practical difference with CI excluding zero and significant test"
+    },
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "reader_accuracy",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "reader_accuracy",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 9,
+      "ci_high": -0.031746,
+      "ci_low": -0.128571,
+      "discordant_pairs": 15,
+      "family": "reader",
+      "label": "resolved",
+      "metric": "reader_accuracy",
+      "observed_mean_diff": -0.078125,
+      "p_value": 6.1e-05,
+      "p_value_holm": 0.000183,
+      "reason": "practical difference with CI excluding zero and significant test"
+    },
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "abstain_accuracy",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "abstain_accuracy",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 9,
+      "ci_high": -0.031746,
+      "ci_low": -0.128571,
+      "discordant_pairs": 15,
+      "family": "reader",
+      "label": "resolved",
+      "metric": "abstain_accuracy",
+      "observed_mean_diff": -0.078125,
+      "p_value": 6.1e-05,
+      "p_value_holm": 0.000183,
+      "reason": "practical difference with CI excluding zero and significant test"
+    },
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "authority_correct",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "authority_correct",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 1,
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "discordant_pairs": 0,
+      "family": "reader",
+      "label": "unresolved",
+      "metric": "authority_correct",
+      "observed_mean_diff": 0.0,
+      "p_value": 1.0,
+      "p_value_holm": 1.0,
+      "reason": "absolute difference below the 0.05 practical threshold"
+    },
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "gold_evidence_recall@5",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "gold_evidence_recall@5",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 9,
+      "ci_high": 0.016461,
+      "ci_low": -0.074746,
+      "discordant_pairs": 0,
+      "family": "retrieval",
+      "label": "unresolved",
+      "metric": "gold_evidence_recall@5",
+      "observed_mean_diff": -0.027272,
+      "p_value": null,
+      "reason": "absolute difference below the 0.05 practical threshold"
+    },
+    {
+      "a": "optmem",
+      "b": "mem0",
+      "label": "invalid",
+      "metric": "evidence_id_precision",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "optmem",
+      "b": "hindsight",
+      "label": "invalid",
+      "metric": "evidence_id_precision",
+      "reason": "no paired blocks"
+    },
+    {
+      "a": "mem0",
+      "b": "hindsight",
+      "blocks": 9,
+      "ci_high": -0.006991,
+      "ci_low": -0.071719,
+      "discordant_pairs": 0,
+      "family": "retrieval",
+      "label": "unresolved",
+      "metric": "evidence_id_precision",
+      "observed_mean_diff": -0.036168,
+      "p_value": null,
+      "reason": "absolute difference below the 0.05 practical threshold"
+    }
+  ],
+  "cost": {
+    "benchmark_ceiling": "none (removed on user instruction 2026-08-06; provider-side limits govern)",
+    "total_usd": 2.131278
+  },
+  "freeze": {
+    "errors": [],
+    "verified": true
+  },
+  "generated_at": "2026-08-07T02:01:16Z",
+  "not_run": [
+    {
+      "participant": "gbrain",
+      "reason": "gbrain product-native config requires an embedding provider (ZeroEntropy/OpenAI/Voyage) with credentials not available in this environment"
+    }
+  ],
+  "participants": {
+    "hindsight": {
+      "by_kind": {
+        "abstention": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 45
+        },
+        "authority_conflict": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "changed_preference": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "cross_user": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "current_state": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "deletion": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "do_not_store": {
+          "abstain_accuracy": 0.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 0.0,
+          "total": 9
+        },
+        "expiry": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 0.8333,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "historical": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "migration": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "multi_hop": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 0.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "poisoning": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "provenance": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "recovery": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "role_group": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.5,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 18
+        },
+        "supersession": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "temporary_validity": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        }
+      },
+      "control": false,
+      "cost": {
+        "cost_usd": 0.877309,
+        "input_tokens": 4457533,
+        "output_tokens": 904479,
+        "requests": 1488,
+        "returned_models": [
+          "deepseek-v4-flash"
+        ]
+      },
+      "matrix": {
+        "abstain_accuracy": 0.9844,
+        "abstain_rate": 0.125,
+        "attempts": 576,
+        "authority_correct": 0.0,
+        "chain_complete@5": 0.9576,
+        "cross_principal_evidence_total": 0,
+        "deleted_evidence_total": 0,
+        "evidence_id_precision": 0.8275,
+        "evidence_id_recall": 1.0,
+        "forbidden_evidence_total": 783,
+        "gold_evidence_recall@5": 0.9667,
+        "reader_accuracy": 0.9844,
+        "recall@5": 0.9758
+      },
+      "operational": {
+        "mean_latency_ms": 4771.796,
+        "mean_tokens": 3049.8,
+        "reader_error_attempts": 2,
+        "total_tokens": 1756703
+      },
+      "reliability": {
+        "all_success_rate": 0.9844,
+        "pass_at_1": 0.9844,
+        "queries_with_attempts": 192
+      },
+      "status": "completed_plumbing"
+    },
+    "mem0": {
+      "by_kind": {
+        "abstention": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 45
+        },
+        "authority_conflict": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "changed_preference": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "cross_user": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "current_state": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "deletion": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 1.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "do_not_store": {
+          "abstain_accuracy": 0.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": null,
+          "reader_accuracy": 0.0,
+          "total": 9
+        },
+        "expiry": {
+          "abstain_accuracy": 0.9167,
+          "abstain_rate": 0.0833,
+          "chain_complete@5": 0.9167,
+          "reader_accuracy": 0.9167,
+          "total": 72
+        },
+        "historical": {
+          "abstain_accuracy": 0.9444,
+          "abstain_rate": 0.0556,
+          "chain_complete@5": 0.9444,
+          "reader_accuracy": 0.9444,
+          "total": 72
+        },
+        "migration": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 0.7778,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "multi_hop": {
+          "abstain_accuracy": 0.3333,
+          "abstain_rate": 0.6667,
+          "chain_complete@5": 0.0,
+          "reader_accuracy": 0.3333,
+          "total": 9
+        },
+        "poisoning": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "provenance": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "recovery": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 9
+        },
+        "role_group": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.5,
+          "chain_complete@5": 1.0,
+          "reader_accuracy": 1.0,
+          "total": 18
+        },
+        "supersession": {
+          "abstain_accuracy": 1.0,
+          "abstain_rate": 0.0,
+          "chain_complete@5": 0.9722,
+          "reader_accuracy": 1.0,
+          "total": 72
+        },
+        "temporary_validity": {
+          "abstain_accuracy": 0.875,
+          "abstain_rate": 0.125,
+          "chain_complete@5": 0.875,
+          "reader_accuracy": 0.875,
+          "total": 72
+        }
+      },
+      "control": false,
+      "cost": {
+        "cost_usd": 1.149295,
+        "input_tokens": 6780664,
+        "output_tokens": 714293,
+        "requests": 1294,
+        "returned_models": [
+          "deepseek-v4-flash"
+        ]
+      },
+      "matrix": {
+        "abstain_accuracy": 0.941,
+        "abstain_rate": 0.1684,
+        "attempts": 576,
+        "authority_correct": 0.0,
+        "chain_complete@5": 0.9354,
+        "cross_principal_evidence_total": 0,
+        "deleted_evidence_total": 0,
+        "evidence_id_precision": 0.7914,
+        "evidence_id_recall": 0.9495,
+        "forbidden_evidence_total": 105,
+        "gold_evidence_recall@5": 0.9394,
+        "reader_accuracy": 0.941,
+        "recall@5": 0.9434
+      },
+      "operational": {
+        "mean_latency_ms": 4863.647,
+        "mean_tokens": 1759.3,
+        "reader_error_attempts": 2,
+        "total_tokens": 1013349
+      },
+      "reliability": {
+        "all_success_rate": 0.9062,
+        "pass_at_1": 0.9062,
+        "queries_with_attempts": 192
+      },
+      "status": "completed_plumbing"
+    },
+    "optmem": {
+      "by_kind": {},
+      "control": false,
+      "cost": {
+        "cost_usd": 0.104674,
+        "input_tokens": 594000,
+        "output_tokens": 76836,
+        "requests": 321,
+        "returned_models": [
+          "deepseek-v4-flash"
+        ]
+      },
+      "matrix": {
+        "abstain_accuracy": null,
+        "abstain_rate": null,
+        "attempts": 0,
+        "authority_correct": null,
+        "chain_complete@5": null,
+        "cross_principal_evidence_total": 0,
+        "deleted_evidence_total": 0,
+        "evidence_id_precision": null,
+        "evidence_id_recall": null,
+        "forbidden_evidence_total": 0,
+        "gold_evidence_recall@5": null,
+        "reader_accuracy": null,
+        "recall@5": null
+      },
+      "operational": {
+        "mean_latency_ms": null,
+        "mean_tokens": null,
+        "reader_error_attempts": 0,
+        "total_tokens": 0
+      },
+      "reliability": {
+        "all_success_rate": 0.0,
+        "pass_at_1": 0.0,
+        "queries_with_attempts": 0
+      },
+      "status": "invalid_invariant"
+    }
+  },
+  "protocol_version": "v1",
+  "schema": "sovbench/protocol-report/1",
+  "tag": "protocol-v1-freeze"
+}

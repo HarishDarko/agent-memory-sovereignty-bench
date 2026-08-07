@@ -1,0 +1,26 @@
+# Model gateway policy (Task 3). The proxy refuses anything not listed here.
+# Pricing fields are placeholders: verify current official DeepSeek pricing and
+# set real values before any paid run (see the protocol cost gate).
+
+[upstream]
+allowed_hosts = ["api.deepseek.com"]
+allowed_paths = ["/chat/completions", "/v1/chat/completions"]
+
+[models]
+allowed_aliases = ["deepseek-v4-flash"]
+expected_release = "DeepSeek-V4-Flash-0731"
+attestation_mode = "rolling"   # "rolling" labels results; "strict" requires the returned model to evidence the release
+
+[limits]
+max_messages = 2
+max_retries = 2
+max_requests_per_run = 1000
+max_tokens_per_run = 2000000
+max_cost_usd_per_run = 1.0
+max_requests_global = 10000
+max_tokens_global = 20000000
+max_cost_usd_global = 10.0
+
+[pricing]
+price_per_million_input = 0.14    # official deepseek-v4-flash input pricing, verified 2026-08-06
+price_per_million_output = 0.28   # official deepseek-v4-flash output pricing, verified 2026-08-06

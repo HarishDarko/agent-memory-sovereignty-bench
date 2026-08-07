@@ -1,0 +1,4 @@
+participant,attempts,reader_accuracy,abstain_accuracy,authority_correct,recall@5,chain_complete@5,gold_evidence_recall@5,evidence_id_precision,evidence_id_recall,forbidden_evidence_total,cross_principal_evidence_total,deleted_evidence_total,pass_at_1,all_success_rate,mean_latency_ms,mean_tokens,cost_usd
+hindsight,576,0.9844,0.9844,0.0,0.9758,0.9576,0.9667,0.8275,1.0,783,0,0,0.9844,0.9844,4771.796,3049.8,0.877309
+mem0,576,0.941,0.941,0.0,0.9434,0.9354,0.9394,0.7914,0.9495,105,0,0,0.9062,0.9062,4863.647,1759.3,1.149295
+optmem,0,None,None,None,None,None,None,None,None,0,0,0,0.0,0.0,None,None,0.104674

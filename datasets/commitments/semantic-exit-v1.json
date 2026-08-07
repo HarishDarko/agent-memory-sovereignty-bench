@@ -1,0 +1,11 @@
+{
+  "dataset_id": "semantic-memory-exit-v1",
+  "protocol": "post-freeze-followup-v1",
+  "events_path": "datasets/followups/semantic-exit-v1/events.jsonl",
+  "queries_path": "datasets/followups/semantic-exit-v1/queries.jsonl",
+  "private_gold_path": "scorer_private/semantic-exit-v1/gold.json",
+  "events_sha256": "5f5db4ca2669bd7a3795b0109ebb53a00cd841b2298910260852908e186288f3",
+  "queries_sha256": "6403e20c880071ca57b5f6a0f4c83c89a9c44eceaf45264a468179fea93d5024",
+  "private_gold_sha256": "3ba638c39ba3b80df11e28d4dddee4974f544a1970a146a493cff22864b0cc06",
+  "gold_is_provider_inaccessible": true
+}

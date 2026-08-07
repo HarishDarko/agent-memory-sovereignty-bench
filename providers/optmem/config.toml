@@ -1,0 +1,18 @@
+[provider]
+name = "optmem"
+adapter_version = "0.1.0"
+upstream_version = "1fb164c"
+upstream_commit = "1fb164cf39028047781f72ac3bb1e5a691c1dcb0"
+image_digest = "sha256:bc64d013d37586253156302df506009c099a38592f26aefa5b9e383feb825833"
+license = "no-license-file (all rights reserved by default)"
+telemetry = "none"
+external_dependencies = []
+network_needs = []
+
+# Capability notes (verified against upstream source at the pinned commit):
+#   - append-only by design: no memory deletion, forget only drops rebuildable
+#     tree summaries
+#   - no temporal filtering, tenant model, or ranking in recall
+#   - the adapter performs as-of/principal/scope filtering and records
+#     event-id provenance in each memory line; adapter behavior is recorded
+#     separately from OptMem's own capabilities in every manifest

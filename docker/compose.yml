@@ -1,0 +1,54 @@
+# Memory Sovereignty Benchmark - clean-room Docker pattern.
+#
+# Rules enforced here:
+#   * exactly ONE provider under test per run (PROVIDER_IMAGE is required)
+#   * provider network is `internal: true` -> no uncontrolled internet egress
+#   * provider gets its own named volume per run (bench-<PROVIDER_RUN_ID>-data)
+#   * provider container is read-only (except its own volume + /tmp), drops
+#     ALL capabilities, and runs with declared CPU/memory/PID limits
+#   * the ONLY external route is the gateway service (DeepSeek V4 Flash)
+#   * gold/ground-truth files are never mounted into the provider
+#   * every invocation uses a unique project name: docker compose -p sovbench-<run>
+#
+# Usage (Phase 1+):
+#   export PROVIDER_IMAGE=ghcr.io/owner/provider:tag
+#   export PROVIDER_RUN_ID=2026-08-05-001
+#   export BENCHMARK_TIME=2026-08-01T00:00:00Z
+#   docker compose -p sovbench-<run> -f docker/compose.yml up -d provider
+
+services:
+  gateway:
+    image: ${GATEWAY_IMAGE:-python:3.12-slim}
+    networks: [bench-internal, bench-egress]
+    environment:
+      DEEPSEEK_BASE_URL: ${SOVBENCH_DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+      DEEPSEEK_API_KEY: ${SOVBENCH_DEEPSEEK_API_KEY:-}
+      GATEWAY_MODE: ${SOVBENCH_GATEWAY_MODE:-offline}
+    security_opt: ["no-new-privileges:true"]
+
+  provider:
+    image: ${PROVIDER_IMAGE:?set PROVIDER_IMAGE (e.g. ghcr.io/owner/provider:tag)}
+    networks: [bench-internal]
+    volumes:
+      - bench-data:/provider-state
+    environment:
+      DEEPSEEK_BASE_URL: http://gateway:8000/v1
+      PROVIDER_RUN_ID: ${PROVIDER_RUN_ID:-dev}
+      BENCHMARK_TIME: ${BENCHMARK_TIME:?set deterministic benchmark time}
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    mem_limit: ${PROVIDER_MEM_LIMIT:-256m}
+    pids_limit: ${PROVIDER_PIDS_LIMIT:-256}
+    cpus: ${PROVIDER_CPUS:-0.5}
+    security_opt: ["no-new-privileges:true"]
+
+networks:
+  bench-internal:
+    internal: true
+  bench-egress:
+    driver: bridge
+
+volumes:
+  bench-data:
+    name: bench-${PROVIDER_RUN_ID:-dev}-data

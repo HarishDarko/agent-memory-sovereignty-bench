@@ -1,0 +1,17 @@
+[provider]
+name = "mem0"
+adapter_version = "0.1.0"
+upstream_version = "2.0.17"
+upstream_commit = "3f39fba28f7781aaf581f64a4af39d017af65835"
+image_digest = "n/a-local"
+license = "Apache-2.0"
+telemetry = "disabled"
+external_dependencies = ["mem0ai (pinned commit)", "chromadb", "fastembed"]
+network_needs = []
+
+# Controlled configuration (OSS track, no cloud):
+#   - add(..., infer=False): no LLM fact extraction, no model calls
+#   - vector store: chroma (local on-disk)
+#   - embedder: fastembed + BAAI/bge-small-en-v1.5 (local CPU; model downloaded
+#     once at install time, offline afterwards)
+#   - MEM0_TELEMETRY=false (upstream defaults to True via posthog)
