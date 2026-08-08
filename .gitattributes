@@ -29,6 +29,7 @@ protocols/v1/personal-controlled.md text eol=lf
 protocols/v1/analysis-plan.md text eol=lf
 datasets/followups/semantic-exit-v1/events.jsonl text eol=lf
 datasets/followups/semantic-exit-v1/queries.jsonl text eol=lf
+datasets/dev/personal/dataset-card.md text eol=lf
 
 # CRLF-recorded files (DEV corpus and the original Semantic Exit report)
 datasets/dev/personal/events.jsonl text eol=crlf
