@@ -124,6 +124,24 @@ evidence that shaped the adapter.
   1024, base URL `http://127.0.0.1:4713/v1`, no hosted embedding key, no local
   generative model. The common reader remains the ledgered
   `deepseek-v4-flash` gateway.
+
+## GBrain native completion attempts v2 - 2026-08-08
+
+Two further local embedding candidates were evaluated on the same public DEV
+split with the same pinned GBrain, preflight, and reader (see
+`docs/reports/gbrain-native-local-supplement-v2.md`):
+
+- `snowflake-arctic-embed2:latest` (digest
+  `5de93a84837d0ff00da872e90830df5d973f616cbf1e5c198731ab19dd7b776b`, 566M,
+  8192 context, 1024 dims): DEV Recall@5 = 0.8194.
+- `bge-m3` (asserted by the pinned Ollama recipe; 8192 context, 1024 dims):
+  DEV Recall@5 = 0.8056.
+
+Both passed the optimized preflight and retrieved semantically; both remained
+below the predeclared 0.85 Recall@5 guardrail (best DEV Recall@5 = 0.8194),
+so hidden TEST was not run and the native track remains
+`not_run` with three rejected local-embedding configurations. Cost of the two
+v2 DEV attempts: USD 0.06698 (ledgered).
 - Exact source/config hashes and the no-hidden-test-touch attestation are in
   the gitignored follow-up run artifact
   `runs/followups/gbrain-native-local/environment-attestation.json`.

@@ -98,9 +98,9 @@ end-to-end with preflight PASS on all six controls.
 ## Native-track readiness
 
 Ready as documented. Native declarations exist for Mem0 and Hindsight.
-GBrain native TEST was not run: a supplementary local-embedding native
-configuration was evaluated on DEV but failed the preregistered quality
-guardrail, so it did not proceed to hidden TEST. OptMem native is not
+GBrain native TEST was not run: three local-embedding native configurations
+were evaluated on DEV and all failed the preregistered Recall@5 >= 0.85
+guardrail (best 0.8194), so hidden TEST did not proceed. OptMem native is not
 implemented. Native behavior is reported separately from controlled behavior.
 
 ## Tests
