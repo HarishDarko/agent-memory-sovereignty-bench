@@ -1,15 +1,37 @@
-# Normalize line endings so SHA-256 integrity records stay reproducible.
+# Line-ending pins for reproducible SHA-256 integrity records.
 #
-# The frozen freeze/commitment records in this repository were computed from
-# LF working-tree bytes. Forcing LF checkout for the recorded file types makes
-# a fresh clone produce identical bytes on any platform (including Windows
-# hosts whose Git defaults to CRLF conversions).
+# The frozen freeze and commitment records in this repository were computed
+# from working-tree bytes that mix LF and CRLF per file (verified 2026-08-07).
+# Every file covered by a hash record is pinned below to the exact
+# representation the record was computed from, so a fresh clone on any
+# platform reproduces identical bytes. Files without hash records follow
+# `* text=auto`.
 
 * text=auto
+
+# LF-recorded files
 .python-version text eol=lf
-*.toml text eol=lf
-*.md text eol=lf
-*.py text eol=lf
-*.jsonl text eol=lf
+config/default.toml text eol=lf
+config/gateway-policy.toml text eol=lf
+config/providers/bm25-pure.toml text eol=lf
+config/providers/full-context.toml text eol=lf
+providers/gbrain/config.toml text eol=lf
+providers/hindsight/config.toml text eol=lf
+providers/mem0/config.toml text eol=lf
+providers/optmem/config.toml text eol=lf
 schemas/*.json text eol=lf
-datasets/commitments/*.json text eol=lf
+prompts/reader-v1.md text eol=lf
+benchmark/scorer.py text eol=lf
+benchmark/metrics.py text eol=lf
+benchmark/statistics.py text eol=lf
+benchmark/validation.py text eol=lf
+protocols/v1/personal-controlled.md text eol=lf
+protocols/v1/analysis-plan.md text eol=lf
+datasets/followups/semantic-exit-v1/events.jsonl text eol=lf
+datasets/followups/semantic-exit-v1/queries.jsonl text eol=lf
+
+# CRLF-recorded files (DEV corpus and the original Semantic Exit report)
+datasets/dev/personal/events.jsonl text eol=crlf
+datasets/dev/personal/queries.jsonl text eol=crlf
+datasets/dev/personal/ground_truth.jsonl text eol=crlf
+docs/reports/semantic-memory-exit-v1.md text eol=crlf
