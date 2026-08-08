@@ -71,8 +71,9 @@ reader statelessness, compose policy). Zero leakage, zero mutation.
 ## Interpretation
 
 - The failure cannot be attributed to the initially selected embedding model
-  alone: all three tested local embedding configurations remained below the
-  preregistered DEV threshold (0.76-0.82 band).
+  alone: three tested local embedding configurations across two model
+  families all remained below the preregistered DEV threshold (0.76-0.82
+  band).
 - The retrieval surface (adapter `search` per-term union over the pinned CLI)
   is identical to the controlled configuration that reaches 0.982; enabling
   embeddings changes GBrain's ranking, not the adapter.
