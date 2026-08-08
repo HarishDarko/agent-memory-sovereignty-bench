@@ -1,16 +1,15 @@
 # Normalize line endings so SHA-256 integrity records stay reproducible.
 #
 # The frozen freeze/commitment records in this repository were computed from
-# CRLF working-tree bytes on the research machine. Forcing CRLF checkout for
-# the recorded file types makes a fresh clone produce identical bytes on any
-# platform. Unrecorded files (for example the LF-written analysis JSON under
-# reports/) keep LF.
+# LF working-tree bytes. Forcing LF checkout for the recorded file types makes
+# a fresh clone produce identical bytes on any platform (including Windows
+# hosts whose Git defaults to CRLF conversions).
 
 * text=auto
-.python-version text eol=crlf
-*.toml text eol=crlf
-*.md text eol=crlf
-*.py text eol=crlf
-*.jsonl text eol=crlf
-schemas/*.json text eol=crlf
-datasets/commitments/*.json text eol=crlf
+.python-version text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.jsonl text eol=lf
+schemas/*.json text eol=lf
+datasets/commitments/*.json text eol=lf
