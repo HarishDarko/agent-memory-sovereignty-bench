@@ -133,8 +133,8 @@ See [docs/provider-support.md](docs/provider-support.md) and each provider's
 
 ## Quick start
 
-Requirements: Python 3.11-3.12, [uv](https://docs.astral.sh/uv/), Git.
-No paid services are needed for the smoke test or DEV runs.
+The full walkthrough is in [docs/getting-started.md](docs/getting-started.md);
+the five-minute path is below.
 
 ```bash
 git clone <future-url> agent-memory-sovereignty-bench
@@ -142,6 +142,38 @@ cd agent-memory-sovereignty-bench
 uv sync
 uv run pytest
 ```
+
+Then the free smoke test:
+
+```bash
+uv run python scripts/validate_provider.py --provider bm25-pure
+uv run python scripts/run_phase0.py
+```
+
+Expected: the validator prints `PASS` rows and `Ready for controlled DEV
+evaluation.`; Phase 0 prints `status=completed_plumbing preflight=PASS` for
+each control.
+
+## Prerequisites
+
+**Required for the smoke test and DEV baseline:**
+
+- Python 3.11-3.12 (the repository pins 3.12 in `.python-version`)
+- [uv](https://docs.astral.sh/uv/)
+- Git
+
+**Not required for the smoke test or DEV baseline (verified):**
+
+- a paid LLM API
+- an OpenAI account or key
+- a DeepSeek key
+- Docker
+- Bun
+- an external memory provider
+- a local embedding model
+
+Provider integrations add their own requirements; see
+[docs/provider-requirements.md](docs/provider-requirements.md).
 
 Provider integrations need their own dependencies:
 

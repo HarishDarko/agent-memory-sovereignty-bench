@@ -3,6 +3,23 @@
 Pinned upstream: `garrytan/gbrain` @ `15b9863d13635d173562a54f55a1d388bfcf546b`
 (v0.42.73.2, MIT).
 
+## Requirements at a glance
+
+- Install: Bun >= 1.3.10 and the pinned gbrain CLI (see install below)
+- External services: none in the controlled configuration (PGLite,
+  keyword search, no embedding keys)
+- Environment: `GBRAIN_BIN` / `BUN_BIN` (defaults resolve under the user
+  home Bun install)
+- Controlled support: yes
+- Native support: **not run** - a supplementary local-embedding native
+  configuration was evaluated on DEV (Ollama `snowflake-arctic-embed:335m`)
+  but did not pass the preregistered quality guardrail (DEV Recall@5 below
+  0.85), so hidden TEST was not run. Adapter local-embedding code paths are
+  capability, not a validated research result
+- Lifecycle support: deletion native; export/recovery yes (canonical
+  Markdown/Git brain is the durable state)
+- Validation: `uv run python scripts/validate_provider.py --provider gbrain`
+
 ## Audit summary (see `docs/research/provider-version-log.md`)
 
 - Markdown + frontmatter in a git brain repo is the system of record; the

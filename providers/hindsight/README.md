@@ -3,6 +3,24 @@
 Pinned upstream: `vectorize-io/hindsight` @
 `797faf7981ce9332e2ce7c922471b72b506b4065` (v0.8.6, MIT).
 
+## Requirements at a glance
+
+- Install: Docker; build/run the pinned stack
+  (`docker/providers/hindsight/docker-compose.yml`), which bakes the local
+  model cache; no prebuilt image is published
+- External services: PostgreSQL + pgvector (in the compose stack); provider
+  LLM features off in the controlled configuration
+- Environment: `HINDSIGHT_API_URL` (default `http://127.0.0.1:8000`)
+- Controlled support: yes
+- Native support: yes (declared in `manifest.toml`); temporal ownership is
+  descriptive because recall requires an application-supplied
+  `query_timestamp`
+- Lifecycle support: deletion native; whole-bank export/import yes
+- Research limitation: provenance partly adapter-supplied; principal/scope
+  isolation is runner-assisted in this benchmark
+- Validation: `uv run python scripts/validate_provider.py --provider hindsight`
+  (with the stack running)
+
 ## Audit summary (see `docs/research/provider-version-log.md`)
 
 - Hindsight is an API-server memory system (hybrid BM25 + semantic + graph +

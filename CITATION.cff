@@ -6,6 +6,9 @@ type: software
 version: "0.1.0"
 date-released: "2026-08-07"
 license: Apache-2.0
+authors:
+  - family-names: Venugopal
+    given-names: Harish
 repository-code: "https://github.com/<owner>/agent-memory-sovereignty-bench"
 keywords:
   - memory systems

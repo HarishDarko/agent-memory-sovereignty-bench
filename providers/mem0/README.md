@@ -3,6 +3,20 @@
 Pinned upstream: `mem0ai/mem0` @ `3f39fba28f7781aaf581f64a4af39d017af65835`
 (v2.0.17, Apache-2.0).
 
+## Requirements at a glance
+
+- Install: `uv sync --extra mem0` (pins mem0ai 2.0.17, chromadb 1.5.9,
+  fastembed 0.8.0)
+- External services: none (local Chroma + FastEmbed; telemetry disabled)
+- Environment: none required (no API key in the controlled configuration)
+- Controlled support: yes (`infer=False`)
+- Native support: yes (declared in `manifest.toml`)
+- Lifecycle support: deletion native; export/recovery partial
+- Research limitation: provenance is partly adapter-supplied; the assisted
+  scope condition also applied temporal eligibility filtering (see
+  `docs/scientific-audit.md`)
+- Validation: `uv run python scripts/validate_provider.py --provider mem0`
+
 ## Audit summary (see `docs/research/provider-version-log.md`)
 
 - posthog telemetry is a core dependency and defaults to ON; the adapter

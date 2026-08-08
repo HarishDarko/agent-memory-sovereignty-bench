@@ -14,11 +14,30 @@ Copy-Item -Recurse templates\provider providers\<name>
 Implement `adapter.py`:
 
 - subclass `MemoryProvider` from `benchmark/providers.py`
-- implement `reset`, `ingest`, `await_ready`, `retrieve`, `snapshot`,
-  `restore`, `stats`, `cleanup`
-- leave `delete`, `export`, `import_data`, `restart` raising
-  `CapabilityNotSupported` unless supported
 - provide a `make_<name>(data_dir=None, **kwargs)` factory
+
+### Mandatory methods (Level 1)
+
+| Method | Contract |
+|---|---|
+| `reset()` | return the provider to an empty, fresh state |
+| `ingest(events)` | store events; deduplicate by `event_id` |
+| `await_ready(timeout_s)` | poll until newly written facts are searchable |
+| `retrieve(query)` | return evidence under the query's principal/scope/as_of |
+| `snapshot()` / `restore(snapshot)` | hash provider state and restore from a baseline |
+| `stats()` | operational counts for the run manifest |
+| `cleanup()` | close resources; state may remain for inspection |
+
+### Optional methods (Level 2/3)
+
+| Method | Meaning |
+|---|---|
+| `delete(target)` | native deletion; raise `CapabilityNotSupported` if absent |
+| `export()` / `import_data(data)` | documented exit/restore surfaces |
+| `restart()` | state survives a provider restart |
+
+Unsupported optional methods must raise `CapabilityNotSupported`; they are
+recorded as unsupported, never faked.
 
 Example retrieval-only adapter: `templates/provider/adapter.py`.
 
@@ -154,6 +173,18 @@ Before publishing provider results:
 - adapter-independent smoke tests for negative results (prove the interface
   works before reporting product limitations)
 - run the contamination preflight and include the result
+
+## Files you should NOT modify
+
+Adding a provider does not require changes to:
+
+- `benchmark/runner.py`, `benchmark/scorer.py`, `benchmark/metrics.py`
+- datasets or gold (including `scorer_private/`)
+- `protocols/` or frozen reports
+- `contamination/` or the attribution analysis
+
+If you believe a central change is required, open an issue first and explain
+the coupling instead of editing the central machinery.
 
 ## Checklist
 

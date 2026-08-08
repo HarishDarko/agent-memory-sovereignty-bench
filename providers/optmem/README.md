@@ -2,6 +2,21 @@
 
 Pinned upstream: `VictorTaelin/OptMem` @ `1fb164cf39028047781f72ac3bb1e5a691c1dcb0`.
 
+## Requirements at a glance
+
+- Install: copy the pinned upstream script to a local, gitignored location
+  (see "Local pinned install" below); no pip dependencies
+- External services: none (single-file Python CLI, no network)
+- Environment: `SOVBENCH_OPTMEM_MEMO` / `OPTMEM_MEMO_PATH` or `memo` on PATH
+- Controlled support: yes
+- Native support: no (not implemented)
+- Lifecycle support: deletion unsupported by design (append-only); export/
+  recovery partial
+- Licensing: upstream has **no license file** (all rights reserved by
+  default). No OptMem source is vendored or redistributed; do not publish a
+  prebuilt OptMem image unless redistribution rights are clarified
+- Validation: `uv run python scripts/validate_provider.py --provider optmem`
+
 ## Audit summary (see `docs/research/provider-version-log.md`)
 
 - Single-file Python 3 CLI, zero dependencies, no network, no telemetry.
