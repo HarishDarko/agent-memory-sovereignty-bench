@@ -34,7 +34,7 @@ configuration is required only for exact reproduction of those runs.
 From a fresh clone:
 
 ```bash
-git clone <future-url> agent-memory-sovereignty-bench
+git clone https://github.com/HarishDarko/agent-memory-sovereignty-bench
 cd agent-memory-sovereignty-bench
 uv sync
 uv run pytest

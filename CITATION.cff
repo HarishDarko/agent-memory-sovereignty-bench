@@ -9,7 +9,7 @@ license: Apache-2.0
 authors:
   - family-names: Venugopal
     given-names: Harish
-repository-code: "https://github.com/<owner>/agent-memory-sovereignty-bench"
+repository-code: "https://github.com/HarishDarko/agent-memory-sovereignty-bench"
 keywords:
   - memory systems
   - evaluation

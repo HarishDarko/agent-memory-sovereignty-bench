@@ -137,7 +137,7 @@ The full walkthrough is in [docs/getting-started.md](docs/getting-started.md);
 the five-minute path is below.
 
 ```bash
-git clone <future-url> agent-memory-sovereignty-bench
+git clone https://github.com/HarishDarko/agent-memory-sovereignty-bench
 cd agent-memory-sovereignty-bench
 uv sync
 uv run pytest
