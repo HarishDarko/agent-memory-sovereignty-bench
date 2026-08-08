@@ -112,14 +112,15 @@ the original preregistration. They were executed under an explicit,
 on-record user instruction for this completion attempt: the author proposed a
 bounded DEV candidate set of recipe-asserted local embedding models (arctic
 embed2 first, then bge-m3 if the guardrail still failed), and the user
-responded: "proceed. Choose the best flow you think is right." After the
-first DEV rejection, that bounded supplementary follow-up authorized two
-additional local embedding configurations to test whether the result was
-specific to the initial model. This was not an open-ended model search: both
-additional configurations also failed the preregistered 0.85 DEV threshold,
-after which testing stopped. The original predeclared rule ("if the
-configuration is correct but local embedding performance remains below 0.85:
-stop and report") applied to the bounded candidate set and was honored.
+responded: "proceed. Choose the best flow you think is right."
+
+The original preregistered path stopped after the first local-embedding
+configuration failed the DEV guardrail. Attempts 2 and 3 were subsequently
+authorized as a bounded post-freeze supplementary investigation to determine
+whether the result was specific to the initial embedding model. Both
+additional configurations also remained below the 0.85 DEV threshold, after
+which the supplementary investigation stopped. No hosted embedding fallback
+or hidden TEST run was performed.
 
 These runs are post-freeze supplementary evidence only. They are not merged
 into frozen V1 tables, hidden TEST provider results, provider rankings, or
