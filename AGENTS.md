@@ -72,8 +72,9 @@ protocol, or frozen reports, unless the user explicitly requires it.
 Controlled: canonical events in, normalized semantics, common reader/scorer.
 Native: raw events through the provider's own pipeline; behavior is
 preserved, not normalized. Native support is optional and must be declared
-in the manifest (`tracks.native`). GBrain native TEST was not run; do not
-imply otherwise.
+in the manifest (`tracks.native`). GBrain native DEV was evaluated with three
+local embedding configurations and rejected by the preregistered guardrail;
+hidden TEST was not run; do not imply otherwise.
 
 ## Capability manifest
 

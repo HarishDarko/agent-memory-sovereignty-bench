@@ -9,6 +9,11 @@ the first rejected DEV attempt (snowflake-arctic-embed:335m).
 
 ## Outcome
 
+**Status: POST-FREEZE SUPPLEMENTARY DEV EVIDENCE.**
+
+**GBrain native status: Native DEV evaluated and rejected by the
+preregistered guardrail; hidden TEST not run.**
+
 The GBrain native track cannot be completed under the preregistered DEV
 guardrail with local embeddings. Two further local embedding models were
 evaluated on the same public DEV split with the pinned GBrain
@@ -65,8 +70,9 @@ reader statelessness, compose policy). Zero leakage, zero mutation.
 
 ## Interpretation
 
-- The failure is not specific to one embedding model: three models across
-  two families and three context lengths converge on the 0.76-0.82 band.
+- The failure cannot be attributed to the initially selected embedding model
+  alone: all three tested local embedding configurations remained below the
+  preregistered DEV threshold (0.76-0.82 band).
 - The retrieval surface (adapter `search` per-term union over the pinned CLI)
   is identical to the controlled configuration that reaches 0.982; enabling
   embeddings changes GBrain's ranking, not the adapter.
@@ -76,6 +82,47 @@ reader statelessness, compose policy). Zero leakage, zero mutation.
   rule on this corpus.
 - A hosted embedding fallback (for example Gemini) would require a new
   explicit instruction per the standing policy and was not used.
+
+## Workload-fit note
+
+The AMSB DEV corpus contains distinctive lexical identifiers/tokens, which
+likely favors exact/keyword retrieval. In this workload, GBrain's controlled
+keyword path ranked evidence substantially better than the tested semantic
+embedding configurations. AMSB V1 is valid for its preregistered workload,
+but these results should not be interpreted as a universal test of semantic
+retrieval quality. This is a workload-fit limitation, not a benchmark
+invalidation, and not evidence that semantic retrieval is generally inferior.
+
+## What `forbidden_evidence_total` means
+
+`forbidden_evidence_total` is the count, summed across all queries, of
+retrieved evidence items whose corpus metadata kind is `poison_attempt`
+(untrusted content planted in the corpus, sourced from external forum posts;
+the DEV corpus contains three such events). It counts poison-kind items
+present in the evidence set regardless of whether the reader cited them. It
+does not count temporal/as-of-ineligible items, and it is not a security- or
+deletion-leak metric. It is an exposure count for authority/poisoning cases.
+
+## Stopping-rule record
+
+The first DEV attempt (snowflake-arctic-embed:335m, Recall@5 0.7639) fell
+below the preregistered 0.85 threshold. Attempts 2 and 3 were not part of
+the original preregistration. They were executed under an explicit,
+on-record user instruction for this completion attempt: the author proposed a
+bounded DEV candidate set of recipe-asserted local embedding models (arctic
+embed2 first, then bge-m3 if the guardrail still failed), and the user
+responded: "proceed. Choose the best flow you think is right." After the
+first DEV rejection, that bounded supplementary follow-up authorized two
+additional local embedding configurations to test whether the result was
+specific to the initial model. This was not an open-ended model search: both
+additional configurations also failed the preregistered 0.85 DEV threshold,
+after which testing stopped. The original predeclared rule ("if the
+configuration is correct but local embedding performance remains below 0.85:
+stop and report") applied to the bounded candidate set and was honored.
+
+These runs are post-freeze supplementary evidence only. They are not merged
+into frozen V1 tables, hidden TEST provider results, provider rankings, or
+controlled/native benchmark headline numbers.
 
 ## Cost (this pass)
 
@@ -94,7 +141,16 @@ pricing. No hidden TEST API calls were made.
 ## Final GBrain native status
 
 **No hidden TEST supplementary GBrain-native local-embedding result exists.**
-The correct status remains: technically supported by the pinned version,
-DEV-validated as operational with three local embedding configurations, all
-rejected by the preregistered Recall@5 guardrail (best DEV Recall@5 =
-0.8194), and stopped without a hosted-embedding fallback.
+**Native DEV evaluated and rejected by the preregistered guardrail; hidden
+TEST not run.** The pinned version technically supports local embeddings,
+and all three tested configurations were operational on DEV with every
+preflight/isolation check passing, but none met the preregistered
+Recall@5 >= 0.85 DEV guardrail. The best result was 0.8194, so no
+supplementary GBrain-native hidden-TEST run exists. Testing stopped after
+the bounded candidate set, without a hosted-embedding fallback.
+
+The result is specific to the tested GBrain version, local embedding
+configurations, adapter surface, and AMSB DEV corpus. On this corpus,
+GBrain's keyword path ranked relevant evidence better than the tested
+embedding-backed path; it does not establish general inadequacy of GBrain or
+semantic retrieval.

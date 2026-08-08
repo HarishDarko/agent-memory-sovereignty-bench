@@ -16,12 +16,13 @@ Coverage notes:
 - "partial" means some aspects are native and others are supplied.
 - OptMem's pinned upstream has no license file; treat as all-rights-reserved
   and review before use.
-- *GBrain native TEST was not run. Three local-embedding native
-  configurations were evaluated on DEV (Ollama `snowflake-arctic-embed:335m`,
-  `snowflake-arctic-embed2`, `bge-m3`); all passed isolation checks but fell
-  below the preregistered 0.85 Recall@5 guardrail (best DEV Recall@5 =
-  0.8194), so hidden TEST was not run. The adapter's local-embedding code
-  paths are adapter capability, not a validated research result. See
+- *GBrain native: DEV evaluated and rejected / TEST not run. Three
+  local-embedding configurations were evaluated on DEV (Ollama
+  `snowflake-arctic-embed:335m`, `snowflake-arctic-embed2`, `bge-m3`); all
+  passed isolation checks but fell below the preregistered 0.85 Recall@5
+  guardrail (best DEV Recall@5 = 0.8194), so hidden TEST was not run. The
+  adapter's local-embedding code paths are adapter capability, not a
+  validated research result. See
   `docs/reports/gbrain-native-local-supplement-v2.md`.
 
 This is integration/test coverage. It is not a provider quality ranking, and

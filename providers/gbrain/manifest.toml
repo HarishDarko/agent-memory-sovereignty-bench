@@ -6,9 +6,10 @@ upstream_commit = "15b9863d13635d173562a54f55a1d388bfcf546b"
 
 [tracks]
 controlled = true
-native = "not_run"   # three local-embedding native configs (335m, embed2,
-                     # bge-m3) failed the preregistered DEV Recall@5 >= 0.85
-                     # guardrail (best 0.8194); hidden TEST was not run
+native = "dev_rejected"   # native DEV evaluated with three local-embedding
+                          # configs (335m, embed2, bge-m3); all below the
+                          # preregistered DEV Recall@5 >= 0.85 guardrail
+                          # (best 0.8194); hidden TEST not run
 
 [capabilities.retrieval]
 product = true

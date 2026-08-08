@@ -121,13 +121,13 @@ Existing validated integrations (exact pins preserved from the research):
 | GBrain 0.42.73.2 | yes | no* | native | assisted | assisted | yes | yes |
 | OptMem 1fb164c | yes | no | unsupported | assisted | assisted | partial | partial |
 
-*GBrain native TEST was not run. Three local-embedding native configurations
-were evaluated on DEV (snowflake-arctic-embed:335m, snowflake-arctic-embed2,
-bge-m3); all passed isolation checks but fell below the preregistered 0.85
-Recall@5 guardrail (best DEV Recall@5 = 0.8194), so hidden TEST was not run.
-The adapter includes local-embedding code paths as adapter capability, not as
-a validated research result. See
-`docs/reports/gbrain-native-local-supplement-v2.md`.
+*GBrain native: DEV evaluated and rejected / TEST not run. Three
+local-embedding configurations were evaluated on DEV
+(snowflake-arctic-embed:335m, snowflake-arctic-embed2, bge-m3); all passed
+isolation checks but fell below the preregistered 0.85 Recall@5 guardrail
+(best DEV Recall@5 = 0.8194), so hidden TEST was not run. The adapter
+includes local-embedding code paths as adapter capability, not as a validated
+research result. See `docs/reports/gbrain-native-local-supplement-v2.md`.
 
 This table is integration/test coverage, not a provider quality ranking.
 See [docs/provider-support.md](docs/provider-support.md) and each provider's
