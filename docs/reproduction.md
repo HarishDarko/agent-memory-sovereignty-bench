@@ -55,3 +55,23 @@ Not reproducible without the private material:
 
 Model identity: every manifest records the requested and returned model;
 the researched runs returned `deepseek-v4-flash`.
+
+## Reader configurations and reproduction boundaries
+
+Distinguish three levels:
+
+- **Reproducing software behavior** (install, tests, smoke, provider work):
+  no reader API required; the offline deterministic reader is used.
+- **Reproducing public DEV plumbing**: offline deterministic reader, $0.
+- **Reproducing frozen AMSB Protocol v1 model-backed research**: requires the
+  exact frozen DeepSeek V4 Flash reader configuration (model alias, prompt,
+  temperature, evidence budget, statelessness) recorded in
+  `protocols/v1/config-freeze.json` and `prompts/reader-v1.md`.
+
+> A run using GPT, Claude, Gemini, another DeepSeek version, or any other
+> reader is not an exact reproduction of the frozen AMSB Protocol v1 results.
+
+It may still be a valid new AMSB experiment, provided the reader
+implementation, exact model, settings, and prompt version are recorded. Do
+not compare results from different readers as though everything else were
+identical: memory-system results can be reader-sensitive.

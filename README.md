@@ -154,6 +154,11 @@ Expected: the validator prints `PASS` rows and `Ready for controlled DEV
 evaluation.`; Phase 0 prints `status=completed_plumbing preflight=PASS` for
 each control.
 
+**No model API is required to try AMSB.** The smoke test and public DEV
+workflow use an offline deterministic reader. DeepSeek V4 Flash is retained
+only as the frozen reference reader for exact reproduction of the original
+AMSB Protocol v1 model-backed experiments. AMSB is not tied to DeepSeek.
+
 ## Prerequisites
 
 **Required for the smoke test and DEV baseline:**

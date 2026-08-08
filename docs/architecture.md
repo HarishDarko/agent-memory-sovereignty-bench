@@ -52,6 +52,16 @@ temperature 0.0, no conversation history, fixed evidence budget. The scorer
 is deterministic, typed, and reads private gold that is never mounted into
 provider runtimes. Reader and scorer are identical across providers.
 
+The reader is an independent, configuration-selected layer
+(`benchmark/model_gateway.py`): the default `offline` mode is a deterministic
+stub with no API calls, and the `deepseek` mode is the frozen reference
+reader used for the AMSB Protocol v1 model-backed experiments. A future
+contributor adds another reader by implementing a `BaseGateway` subclass and
+registering it in `get_gateway()`; memory-provider adapters are not involved.
+No other reader integrations are shipped. AMSB is not tied to DeepSeek:
+DeepSeek V4 Flash is required only for exact reproduction of the historical
+V1 model-backed results.
+
 ## Fail-closed invariants
 
 - one provider per run; no cross-provider volumes, databases, caches, or

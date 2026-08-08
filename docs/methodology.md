@@ -53,6 +53,15 @@ transition may be material despite limited significance power.
 
 ## Reader identity
 
+AMSB is reader-provider neutral. The reader is a separate evaluation layer;
+memory-provider adapters never depend on the reader, and the reader never
+depends on the provider. New experiments may use any compatible reader
+implementation or configuration, but results obtained with a different
+reader should be treated as a different experimental configuration.
+
 The researched reader uses the official `deepseek-v4-flash` API alias, whose
 2026-07-31 dated release is DeepSeek-V4-Flash-0731. Requested and returned
-identity are recorded in every manifest. The offline stub makes no API calls.
+identity are recorded in every manifest. DeepSeek V4 Flash is the frozen
+reference reader for the AMSB Protocol v1 model-backed results; exact
+reproduction of those runs requires the frozen DeepSeek configuration. The
+offline stub makes no API calls.

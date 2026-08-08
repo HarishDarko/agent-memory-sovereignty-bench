@@ -24,6 +24,11 @@ an external memory provider, or a local embedding model. Provider
 integrations add requirements of their own; see
 [provider-requirements.md](provider-requirements.md).
 
+AMSB is reader-provider neutral: the offline deterministic reader needs no
+model API at all. DeepSeek V4 Flash is the frozen reference reader used for
+the historical AMSB Protocol v1 model-backed experiments; a DeepSeek
+configuration is required only for exact reproduction of those runs.
+
 ## 3. Five-minute local smoke test
 
 From a fresh clone:
@@ -130,6 +135,10 @@ extra. No central runner/scorer changes.
 - Hidden TEST gold and packs (`scorer_private/`): private; the published
   commitment hashes prove they existed before execution.
 - Live reader results: require `SOVBENCH_DEEPSEEK_API_KEY` (paid).
+- Model-backed experiments beyond the offline path require a configured
+  reader; the frozen reproduction path uses the DeepSeek V4 Flash
+  configuration. Any other reader is a different experimental configuration,
+  not an exact reproduction of AMSB Protocol v1.
 - Machine-local run artifacts under `runs/`: gitignored and not distributed.
 
 Everything else needed to understand, run, extend, and reproduce the public

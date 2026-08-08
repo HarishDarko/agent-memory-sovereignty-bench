@@ -11,14 +11,31 @@ uv, Git).
 | Hindsight integration | Docker with the pinned compose stack (`docker/providers/hindsight/docker-compose.yml`); local model cache baked into the pinned image | set `HINDSIGHT_API_URL`; controlled configuration keeps provider LLM features off |
 | GBrain integration | Bun >= 1.3.10 and the pinned gbrain CLI 0.42.73.2 (`15b9863d...`) | set `GBRAIN_BIN` / `BUN_BIN`; controlled configuration uses no embedding keys |
 | OptMem integration | pinned upstream script installed locally (gitignored, e.g. `.optmem/memo`) | set `SOVBENCH_OPTMEM_MEMO`; upstream has no license file; never vendored; do not publish a prebuilt image |
-| Live common reader | `SOVBENCH_DEEPSEEK_API_KEY` (+ `uv sync --extra gateway`) | paid API calls; only for live reader runs |
+| Frozen/live DeepSeek reader (exact V1 reproduction or new model-backed experiments) | `SOVBENCH_DEEPSEEK_API_KEY` (+ `uv sync --extra gateway`) | paid API calls; optional - never needed for smoke, DEV, or provider work |
 | Reproduce hidden TEST | not possible publicly | hidden gold and packs are private; commitment hashes are published in `datasets/commitments/` |
+
+## Reader requirements
+
+AMSB is reader-provider neutral. The reader is a separate evaluation layer
+with its own configuration:
+
+| Goal | Reader requirement |
+|---|---|
+| Install AMSB | none beyond core setup |
+| Run smoke test | offline deterministic reader |
+| Validate/add a provider | offline reader sufficient |
+| Run public DEV plumbing | offline deterministic reader, $0 |
+| Run a new model-backed experiment | a compatible configured reader (not shipped beyond the frozen reference) |
+| Exactly reproduce AMSB Protocol v1 model-backed results | frozen DeepSeek V4 Flash configuration |
+
+Only the offline deterministic reader and the frozen DeepSeek reader are
+shipped. No other model-provider integrations exist.
 
 ## Environment variables
 
 | Variable | Used by | Purpose |
 |---|---|---|
-| `SOVBENCH_DEEPSEEK_API_KEY` | gateway | live reader calls (paid) |
+| `SOVBENCH_DEEPSEEK_API_KEY` | gateway | optional; frozen/live DeepSeek reader path only (paid); not needed for smoke, DEV, or provider work |
 | `SOVBENCH_PROTOCOL_UPSTREAM_URL` | gateway | optional upstream override |
 | `HINDSIGHT_API_URL` | Hindsight adapter | API server URL (default `http://127.0.0.1:8000`) |
 | `GBRAIN_BIN`, `BUN_BIN` | GBrain adapter | pinned CLI locations (defaults under the user home Bun install) |

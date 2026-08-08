@@ -25,6 +25,18 @@ Core rule:
 
 > Do not call a benchmark-enforced property a memory-product capability.
 
+Reader neutrality:
+
+- DeepSeek is not mandatory for general development; the offline reader is
+  the default and needs no key.
+- Do not replace the frozen reader (prompt, model, settings) in historical
+  protocols; changing it invalidates exact reproduction.
+- New reader implementations live in the reader layer
+  (`benchmark/model_gateway.py`), separate from memory-provider adapters.
+- Changing reader or model changes the experimental configuration; never
+  compare results from different readers as though everything else were
+  identical.
+
 ## Repository architecture
 
 - `providers/` - adapters, capability manifests, `registry.json`
